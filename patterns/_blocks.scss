@@ -1,0 +1,45 @@
+%block {
+    margin-top: 0;
+    margin-bottom: $gutter;
+}
+
+%container {
+    @extend %clearfix;
+    // @include box-sizing(border-box);
+
+    position: relative;
+    max-width: $maxBlockWidth;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%inner {
+    padding: $gutter;
+    position: relative;
+}
+
+%pull-right {
+    float: right;
+    margin-right: $gutter;
+    margin-bottom: $gutter;
+}
+
+%pull-left {
+    float: left;
+    margin-right: $gutter;
+    margin-bottom: $gutter;
+}
+
+%clear {
+    float: none;
+    clear: both;
+    display: block;
+
+    @extend %clearfix;
+}
+
+%center {
+    @extend %clear;
+
+    text-align: center;
+}

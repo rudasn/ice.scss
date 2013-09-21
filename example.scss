@@ -1,0 +1,14 @@
+
+@import "_variables";
+@import "patterns/_helpers";
+@import "patterns/_blocks";
+@import "patterns/_typography";
+
+aside {
+    @extend %font-smaller;
+}
+
+h1, h2 {
+    @extend %block;
+    @extend %text;
+}
