@@ -5,7 +5,7 @@
 
 %container {
     @extend %clearfix;
-    // @include box-sizing(border-box);
+    @include box-sizing(border-box);
 
     position: relative;
     max-width: $maxBlockWidth;

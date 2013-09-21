@@ -13,3 +13,17 @@ $maxBlockWidth: 980px;
  */
 $lineHeight: 1.67;
 $maxTextWidth: 620px;
+
+/**
+ * Forms
+ */
+$formTextColor: #333;
+$formBorderColor: #c1c1c1;
+$formShadowColor: #ccc;
+$formPadding: 4px;
+$formTextareaBorderColor: adjust-color($formTextColor, $alpha: -0.3);
+$formTextareaTextColor: adjust-color($formTextColor, $alpha: -0.5);
+$formTextareaTextColorLight: adjust-color($formTextColor, $alpha: -0.7);
+$formTextareaBoxShadowIn: inset  1px 1px 8px 1px adjust-color($formTextColor, $alpha: -0.85);
+$formTextareaBoxShadowOutFocus: 0 0 $formPadding  $formBorderColor;
+$formTextareaBoxShadowInFocus: inset 0 0 0 0 $formShadowColor;
