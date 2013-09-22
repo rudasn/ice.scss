@@ -1,29 +1,36 @@
 /**
- * Globals
- */
-$gutter: 15px;
-
-/**
  * Blocks
  */
-$maxBlockWidth: 980px;
+$ice-block-width: 980px;
+$ice-block-gutter: 15px;
+
+$ice-border-color: #ccc;
+$ice-shadow-color: #e9e9e9;
 
 /**
  * Typography
  */
-$lineHeight: 1.67;
-$maxTextWidth: 620px;
+$ice-font-size: 16px;
+
+$ice-font-color: #333;
+
+$ice-line-height: 1.67;
+
+$ice-text-width: 620px;
+
 
 /**
- * Forms
+ * Responsive
  */
-$formTextColor: #333;
-$formBorderColor: #c1c1c1;
-$formShadowColor: #ccc;
-$formPadding: 4px;
-$formTextareaBorderColor: adjust-color($formTextColor, $alpha: -0.3);
-$formTextareaTextColor: adjust-color($formTextColor, $alpha: -0.5);
-$formTextareaTextColorLight: adjust-color($formTextColor, $alpha: -0.7);
-$formTextareaBoxShadowIn: inset  1px 1px 8px 1px adjust-color($formTextColor, $alpha: -0.85);
-$formTextareaBoxShadowOutFocus: 0 0 $formPadding  $formBorderColor;
-$formTextareaBoxShadowInFocus: inset 0 0 0 0 $formShadowColor;
+$ice-respond-min-break: 480px;
+$ice-respond-mid-break: 768px;
+$ice-respond-max-break: $ice-block-width;
+
+$ice-respond-mobile: "(max-width:" + $ice-respond-min-break + ")";
+$ice-respond-tablet: "(min-width:" + ($ice-respond-min-break - 1) + ")",
+                     "(max-width:" + ($ice-respond-max-break - 1) + ")";
+$ice-respond-desktop: "(min-width:" + $ice-respond-max-break + ")";
+$ice-respond-mobile-tablet: "(max-width:" + ($ice-respond-mid-break - 1) + ")";
+$ice-respond-tablet-desktop: "(min-width:" + ($ice-respond-mid-break) + ")";
+
+

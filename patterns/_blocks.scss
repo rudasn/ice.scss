@@ -1,6 +1,6 @@
 %block {
     margin-top: 0;
-    margin-bottom: $gutter;
+    margin-bottom: $ice-block-gutter;
 }
 
 %container {
@@ -8,26 +8,30 @@
     @include box-sizing(border-box);
 
     position: relative;
-    max-width: $maxBlockWidth;
+    max-width: $ice-block-width;
     margin-left: auto;
     margin-right: auto;
 }
 
 %inner {
-    padding: $gutter;
+    padding: $ice-block-gutter;
     position: relative;
 }
 
-%pull-right {
+@mixin pull-right() {
     float: right;
-    margin-right: $gutter;
-    margin-bottom: $gutter;
+    margin-right: $ice-block-gutter;
+    margin-bottom: $ice-block-gutter;
+}
+
+%pull-right {
+    @include pull-right;
 }
 
 %pull-left {
     float: left;
-    margin-right: $gutter;
-    margin-bottom: $gutter;
+    margin-right: $ice-block-gutter;
+    margin-bottom: $ice-block-gutter;
 }
 
 %clear {
