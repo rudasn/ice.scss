@@ -1,80 +1,102 @@
+@mixin ice-form($size: $ice-font-size,
+                $color: $ice-font-color,
+                $border: $ice-border-color,
+                $shadow: adjust-color($border, $lightness: 10%)) {
 
-%forms-text-inputs {
-    @include transition(box-shadow 300ms, color 1s);
+    $padding: $size / 2;
 
-    box-shadow: $formTextareaBoxShadowIn;
-    color: $formTextColor;
+    $box-border: 1px solid $border;
 
-    padding: $formPadding;
-    border: 1px solid $formBorderColor;
-    width: $maxTextWidth / 2.5;
-    max-width: 100%;
+    $box-shadow-size: $size / 2;
+    $box-shadow-color: $shadow;
+    $box-shadow-focus: 0 0 $padding $box-shadow-color, inset 0 0 0 0 $box-shadow-color;
+    $box-shadow: inset  1px 1px $box-shadow-size 1px $box-shadow-color;
 
-    &:focus {
-        outline: none;
+    $placeholderColor: adjust-color($color, $lightness: 45%);
+    $placeholderFocusColor: adjust-color($color, $lightness: 60%);
+
+    $width: $ice-text-width / 2.5;
+
+    #{$all-text-inputs}, textarea, select {
+        font-size: $size;
+        box-shadow: $box-shadow;
+        color: $color;
+        padding: $padding;
+        border: $box-border;
+        width: $width;
+        max-width: 100%;
+
+        &:focus {
+            outline: none;
+
+            &::-webkit-input-placeholder {
+                color: $placeholderFocusColor;
+            }
+            &:-moz-placeholder {
+                color: $placeholderFocusColor;
+            }
+            &::-moz-placeholder {
+                color: $placeholderFocusColor;
+            }
+            &:-ms-input-placeholder {
+                color: $placeholderFocusColor;
+            }
+            box-shadow: $box-shadow-focus;
+        }
+
+        &:disabled {
+            opacity: 0.7;
+        }
 
         &::-webkit-input-placeholder {
-            color: $formTextareaTextColorLight;
+            color: $placeholderColor;
         }
         &:-moz-placeholder {
-            color: $formTextareaTextColorLight;
+            color: $placeholderColor;
         }
         &::-moz-placeholder {
-            color: $formTextareaTextColorLight;
+            color: $placeholderColor;
         }
         &:-ms-input-placeholder {
-            color: $formTextareaTextColorLight;
+            color: $placeholderColor;
         }
-        box-shadow: $formTextareaBoxShadowInFocus, $formTextareaBoxShadowOutFocus;
     }
 
-    &:disabled {
-        opacity: 0.7;
-        border-color: $formTextareaBorderColor;
+    input[type="radio"],
+    input[type="checkbox"] {
+        &:checked + label {
+            font-weight: bold;
+        }
+
+        + label {
+            cursor: pointer;
+            margin-right: $ice-block-gutter;
+            margin-left: -1.2em;
+            padding-left: 1.3em;
+            display: inline-block;
+        }
     }
 
-    &::-webkit-input-placeholder {
-        color: $formTextareaTextColor;
-    }
-    &:-moz-placeholder {
-        color: $formTextareaTextColor;
-    }
-    &::-moz-placeholder {
-        color: $formTextareaTextColor;
-    }
-    &:-ms-input-placeholder {
-        color: $formTextareaTextColor;
-    }
-}
+    textarea {
 
-%forms-textarea {
-    line-height: $lineHeight;
-}
-
-%forms-select {
-    @include background(linear-gradient(#fff,
-        scale-color($formBorderColor, $lightness: 60%)));
-
-    box-shadow: none;
-    border-radius: 0;
-    cursor: pointer;
-
-    &:focus {
-        @include background(linear-gradient(scale-color($formBorderColor,
-            $lightness: 60%), #fff));
-    }
-}
-
-%forms-checkable-inputs {
-    &:checked + label {
-        font-weight: bold;
+        line-height: $ice-line-height;
     }
 
-    + label {
+    select {
+        @include background(linear-gradient(#fff,
+            scale-color($border, $lightness: 60%)));
+
+        box-shadow: none;
+        border-radius: 0;
         cursor: pointer;
-        margin-right: $gutter;
-        margin-left: -1.2em;
-        padding-left: 1.3em;
-        display: inline-block;
+
+        &:focus {
+            @include background(linear-gradient(scale-color($border,
+                $lightness: 60%), #fff));
+        }
     }
+}
+
+%ice-form {
+    @include ice-form();
 }
