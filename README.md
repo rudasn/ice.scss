@@ -1,4 +1,4 @@
-# patterns.scss
+# ice.scss
 
 More info soon.
 
