@@ -1,0 +1,11 @@
+@mixin ice-respond($rules) {
+    $media-query: "only screen";
+
+    @each $rule in $rules {
+        $media-query: $media-query + " and " + $rule;
+    }
+
+    @media #{$media-query} {
+        @content;
+    }
+}
