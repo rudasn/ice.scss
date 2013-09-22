@@ -1,0 +1,52 @@
+@import "../bourbon/bourbon";
+
+@import "../_variables";
+@import "../patterns/_helpers";
+@import "../patterns/_blocks";
+@import "../patterns/_typography";
+@import "../patterns/_forms";
+@import "../patterns/_responsive";
+
+
+h1, h2 {
+    @extend %block;
+    @extend %text;
+}
+
+aside {
+    @extend %font-smaller;
+
+    @include ice-respond($ice-respond-tablet-desktop) {
+        @include pull-right;
+
+        width: 30%;
+    }
+
+    form {
+        @include ice-form($size: 14px, $border: green, $color: blue);
+    }
+}
+
+form {
+    @include ice-respond($ice-respond-mobile) {
+        color: green;
+    }
+    @include ice-respond($ice-respond-tablet) {
+        color: blue;
+    }
+    @include ice-respond($ice-respond-desktop) {
+        color: red;
+    }
+}
+
+.ice-form-large {
+    @include ice-form($size: 26px, $border: red, $color: green, $shadow: blue);
+}
+
+.ice-form {
+    @extend %ice-form;
+}
+
+.ice-container {
+    @extend %container;
+}
