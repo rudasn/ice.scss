@@ -1,28 +1,33 @@
-%text {
+%ice-text {
     line-height: $ice-line-height;
     max-width: $ice-text-width;
 }
 
-%font-small {
-    font-size: 90%;
+%ice-font-hero {
+    // @include rem-fallback("font-size", $ice-font-hero-size);
+    // font-size: $ice-font-hero-size * 100%;
+    font-size: $ice-font-hero-size + em;
 }
 
-%font-smaller {
-     font-size: 80%;
+%ice-font-heading {
+    // @include rem-fallback("font-size", $ice-font-heading-size);
+    font-size: $ice-font-heading-size + em;
 }
 
-%font-smallest {
-    font-size: 75%;
+%ice-font-title {
+    // @include rem-fallback("font-size", $ice-font-title-size);
+    // font-size: $ice-font-title-size * 100%;
+    font-size: $ice-font-title-size + em;
 }
 
-%font-large {
-    font-size: 110%;
+%ice-font-large {
+    // @include rem-fallback("font-size", $ice-font-large-size);
+    // font-size: $ice-font-large-size * 100%;
+    font-size: $ice-font-large-size + em;
 }
 
-%font-larger {
-    font-size: 120%;
-}
-
-%font-largest {
-    font-size: 130%;
+%ice-font-small {
+    // @include rem-fallback("font-size", $ice-font-small-size);
+    // font-size: $ice-font-small-size * 100%;
+    font-size: $ice-font-small-size + em;
 }

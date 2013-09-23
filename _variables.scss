@@ -1,8 +1,13 @@
 /**
+ * Globals
+ */
+$ice-base-size: 16px;
+
+/**
  * Blocks
  */
 $ice-block-width: 980px;
-$ice-block-gutter: 15px;
+$ice-block-gutter: $ice-base-size;
 
 $ice-border-color: #ccc;
 $ice-shadow-color: #e9e9e9;
@@ -10,14 +15,26 @@ $ice-shadow-color: #e9e9e9;
 /**
  * Typography
  */
-$ice-font-size: 16px;
-
-$ice-font-color: #333;
-
 $ice-line-height: 1.67;
-
 $ice-text-width: 620px;
 
+$ice-font-color: #333;
+$ice-font-size: $ice-base-size;
+
+$ice-font-hero-size: 4.5;
+$ice-font-hero: $ice-font-size * $ice-font-hero-size;
+
+$ice-font-heading-size: 2;
+$ice-font-heading: $ice-font-size * $ice-font-heading-size;
+
+$ice-font-title-size: 1.5;
+$ice-font-title: $ice-font-size * $ice-font-title-size;
+
+$ice-font-large-size: 1.2;
+$ice-font-large: $ice-font-size * $ice-font-large-size;
+
+$ice-font-small-size: 0.8;
+$ice-font-small: $ice-font-size * $ice-font-small-size;
 
 /**
  * Responsive
@@ -33,4 +50,9 @@ $ice-respond-desktop: "(min-width:" + $ice-respond-max-break + ")";
 $ice-respond-mobile-tablet: "(max-width:" + ($ice-respond-mid-break - 1) + ")";
 $ice-respond-tablet-desktop: "(min-width:" + ($ice-respond-mid-break) + ")";
 
-
+/**
+ * Navigation
+ */
+$ice-nav-item-active: ".active";
+$ice-nav-link: "> a";
+$ice-nav-link-padding: $ice-block-gutter / 2 $ice-block-gutter;

@@ -1,40 +1,51 @@
-%block {
+@mixin ice-pull($direction, $margin: $ice-block-gutter) {
+    float: $direction;
+    margin-bottom: $margin;
+
+    @if $direction == 'left' {
+        margin-right: $margin;
+    }
+    @else if $direction == 'right' {
+        margin-left: $margin;
+    }
+}
+
+%ice-box {
+    @include box-sizing(border-box);
+}
+
+%ice-block {
     margin-top: 0;
     margin-bottom: $ice-block-gutter;
 }
 
-%container {
+%ice-block-container {
     @extend %clearfix;
-    @include box-sizing(border-box);
+    @extend %ice-box;
 
     position: relative;
-    max-width: $ice-block-width;
     margin-left: auto;
     margin-right: auto;
+    max-width: $ice-block-width;
 }
 
-%inner {
-    padding: $ice-block-gutter;
+%ice-block-inner {
+    @extend %ice-box;
+
     position: relative;
+    max-width: 100%;
+    padding: $ice-block-gutter;
 }
 
-@mixin pull-right() {
-    float: right;
-    margin-right: $ice-block-gutter;
-    margin-bottom: $ice-block-gutter;
+%ice-block-pull-right {
+    @include ice-pull(right);
 }
 
-%pull-right {
-    @include pull-right;
+%ice-block-pull-left {
+    @include ice-pull(left);
 }
 
-%pull-left {
-    float: left;
-    margin-right: $ice-block-gutter;
-    margin-bottom: $ice-block-gutter;
-}
-
-%clear {
+%ice-block-clear {
     float: none;
     clear: both;
     display: block;
@@ -42,8 +53,8 @@
     @extend %clearfix;
 }
 
-%center {
-    @extend %clear;
+%ice-block-center {
+    @extend %ice-block-clear;
 
     text-align: center;
 }
