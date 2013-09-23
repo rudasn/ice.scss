@@ -2,11 +2,11 @@
 
 A collection of SCSS patterns (placeholders and mixins).
 
-**Ice does not produced any CSS.** There is no namespace pollution, no clutter, no rules you'll never use in million years.
+**Ice does not produce any CSS unless you tell it to.**
 
-You are responsible for defining your own selectors according to your project's existing style guides.
+Ice does not define any class names or any selectors. You are responsible for defining your own selectors according to your project's existing style guides.
 
-You get the added benefit of having **grouped selectors** instead of the same rules defined and applied in multiple places. This makes your CSS much smaller and compact.
+Since Ice is based on SCSS placeholders and mixins, you get the added benefit of having **grouped selectors** instead of the same rules defined and applied in multiple places. This makes your CSS much smaller and compact.
 
 ## Example
 
