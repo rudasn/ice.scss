@@ -1,0 +1,89 @@
+@mixin ice-nav($direction: "",
+               $items: "",
+               $active: $ice-nav-item-active,
+               $link: $ice-nav-link,
+               $padding: $ice-nav-link-padding) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @content;
+
+    @if $items != "" {
+        @if $direction != "" {
+            #{$items} {
+                @include ice-nav-item($direction: $direction,
+                                      $link: $link,
+                                      $padding: $padding,
+                                      $active: $active);
+            }
+        }
+    }
+}
+
+@mixin ice-nav-item($direction,
+                    $link: $ice-nav-link,
+                    $padding: $ice-nav-link-padding,
+                    $active: $ice-nav-item-active) {
+    position: relative;
+    @content;
+
+    #{$link} {
+        padding: $padding;
+    }
+
+    @if $direction == vertical {
+        float: none;
+        margin-bottom: $padding;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        #{$link} {
+            display: inline-block;
+        }
+    }
+
+    @else if $direction == horizontal {
+        float: left;
+        margin-bottom: 0;
+
+        #{$link} {
+            display: inline-block;
+        }
+    }
+
+    @if $active != "" {
+        &#{$active} {
+            @include ice-nav-item-active($link);
+        }
+    }
+}
+
+@mixin ice-nav-item-active($link: $ice-nav-link) {
+    #{$link} {
+        font-weight: bold;
+        text-decoration: none;
+        @content;
+    }
+}
+
+%ice-nav {
+    @extend %clearfix;
+    @include ice-nav();
+}
+
+%ice-nav-horizontal-item {
+
+    @include ice-nav-item(horizontal);
+}
+
+%ice-nav-vertical-item {
+
+    @include ice-nav-item(vertical);
+}
+
+%ice-nav-item-active {
+
+    @include ice-nav-item-active;
+}
