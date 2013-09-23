@@ -1,0 +1,412 @@
+/**
+ * Globals
+ */
+/**
+ * Blocks
+ */
+/**
+ * Typography
+ */
+/**
+ * Responsive
+ */
+/**
+ * Navigation
+ */
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+/* Hide visually and from screenreaders, but maintain layout */
+/* Contain floats: h5bp.com/q */
+.ice-container:before, .my-layout:before, footer:before, footer nav ol:before,
+header nav ol:before, aside nav ol:before, .ice-container:after, .my-layout:after, footer:after, footer nav ol:after,
+header nav ol:after, aside nav ol:after {
+  content: "";
+  display: table;
+}
+.ice-container:after, .my-layout:after, footer:after, footer nav ol:after,
+header nav ol:after, aside nav ol:after {
+  clear: both;
+}
+
+.ice-container, .my-layout, .ice-inner, .ice-form input[type="email"], .ice-form input[type="number"], .ice-form input[type="password"], .ice-form input[type="search"], .ice-form input[type="tel"], .ice-form input[type="text"], .ice-form input[type="url"], .ice-form input[type="color"], .ice-form input[type="date"], .ice-form input[type="datetime"], .ice-form input[type="datetime-local"], .ice-form input[type="month"], .ice-form input[type="time"], .ice-form input[type="week"], .ice-form textarea, .ice-form select, aside form input[type="email"], aside form input[type="number"], aside form input[type="password"], aside form input[type="search"], aside form input[type="tel"], aside form input[type="text"], aside form input[type="url"], aside form input[type="color"], aside form input[type="date"], aside form input[type="datetime"], aside form input[type="datetime-local"], aside form input[type="month"], aside form input[type="time"], aside form input[type="week"], aside form textarea, aside form select, .ice-form-large input[type="email"], .ice-form-large input[type="number"], .ice-form-large input[type="password"], .ice-form-large input[type="search"], .ice-form-large input[type="tel"], .ice-form-large input[type="text"], .ice-form-large input[type="url"], .ice-form-large input[type="color"], .ice-form-large input[type="date"], .ice-form-large input[type="datetime"], .ice-form-large input[type="datetime-local"], .ice-form-large input[type="month"], .ice-form-large input[type="time"], .ice-form-large input[type="week"], .ice-form-large textarea, .ice-form-large select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, nav, p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.ice-container, .my-layout {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+}
+
+.ice-inner {
+  position: relative;
+  max-width: 100%;
+  padding: 16px;
+}
+
+.a, .b {
+  float: right;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+footer {
+  float: none;
+  clear: both;
+  display: block;
+}
+
+h1, h2, h3, nav, p {
+  line-height: 1.67;
+  max-width: 620px;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+section h3, aside h3 {
+  font-size: 2em;
+}
+
+section h4, aside h4 {
+  font-size: 1.5em;
+}
+
+aside, footer {
+  font-size: 0.8em;
+}
+
+.ice-form {
+  font-size: 16px;
+}
+.ice-form input[type="email"], .ice-form input[type="number"], .ice-form input[type="password"], .ice-form input[type="search"], .ice-form input[type="tel"], .ice-form input[type="text"], .ice-form input[type="url"], .ice-form input[type="color"], .ice-form input[type="date"], .ice-form input[type="datetime"], .ice-form input[type="datetime-local"], .ice-form input[type="month"], .ice-form input[type="time"], .ice-form input[type="week"], .ice-form textarea, .ice-form select {
+  font: inherit;
+  box-shadow: inset 1px 1px 8px 1px #e6e6e6;
+  color: #333333;
+  padding: 10.66667px;
+  border: 1px solid #cccccc;
+  width: 372px;
+  max-width: 100%;
+}
+.ice-form input[type="email"]:focus, .ice-form input[type="number"]:focus, .ice-form input[type="password"]:focus, .ice-form input[type="search"]:focus, .ice-form input[type="tel"]:focus, .ice-form input[type="text"]:focus, .ice-form input[type="url"]:focus, .ice-form input[type="color"]:focus, .ice-form input[type="date"]:focus, .ice-form input[type="datetime"]:focus, .ice-form input[type="datetime-local"]:focus, .ice-form input[type="month"]:focus, .ice-form input[type="time"]:focus, .ice-form input[type="week"]:focus, .ice-form textarea:focus, .ice-form select:focus {
+  outline: none;
+  box-shadow: 0 0 8px 1px #e6e6e6;
+}
+.ice-form input[type="email"]:focus::-webkit-input-placeholder, .ice-form input[type="number"]:focus::-webkit-input-placeholder, .ice-form input[type="password"]:focus::-webkit-input-placeholder, .ice-form input[type="search"]:focus::-webkit-input-placeholder, .ice-form input[type="tel"]:focus::-webkit-input-placeholder, .ice-form input[type="text"]:focus::-webkit-input-placeholder, .ice-form input[type="url"]:focus::-webkit-input-placeholder, .ice-form input[type="color"]:focus::-webkit-input-placeholder, .ice-form input[type="date"]:focus::-webkit-input-placeholder, .ice-form input[type="datetime"]:focus::-webkit-input-placeholder, .ice-form input[type="datetime-local"]:focus::-webkit-input-placeholder, .ice-form input[type="month"]:focus::-webkit-input-placeholder, .ice-form input[type="time"]:focus::-webkit-input-placeholder, .ice-form input[type="week"]:focus::-webkit-input-placeholder, .ice-form textarea:focus::-webkit-input-placeholder, .ice-form select:focus::-webkit-input-placeholder {
+  color: #cccccc;
+}
+.ice-form input[type="email"]:focus:-moz-placeholder, .ice-form input[type="number"]:focus:-moz-placeholder, .ice-form input[type="password"]:focus:-moz-placeholder, .ice-form input[type="search"]:focus:-moz-placeholder, .ice-form input[type="tel"]:focus:-moz-placeholder, .ice-form input[type="text"]:focus:-moz-placeholder, .ice-form input[type="url"]:focus:-moz-placeholder, .ice-form input[type="color"]:focus:-moz-placeholder, .ice-form input[type="date"]:focus:-moz-placeholder, .ice-form input[type="datetime"]:focus:-moz-placeholder, .ice-form input[type="datetime-local"]:focus:-moz-placeholder, .ice-form input[type="month"]:focus:-moz-placeholder, .ice-form input[type="time"]:focus:-moz-placeholder, .ice-form input[type="week"]:focus:-moz-placeholder, .ice-form textarea:focus:-moz-placeholder, .ice-form select:focus:-moz-placeholder {
+  color: #cccccc;
+}
+.ice-form input[type="email"]:focus::-moz-placeholder, .ice-form input[type="number"]:focus::-moz-placeholder, .ice-form input[type="password"]:focus::-moz-placeholder, .ice-form input[type="search"]:focus::-moz-placeholder, .ice-form input[type="tel"]:focus::-moz-placeholder, .ice-form input[type="text"]:focus::-moz-placeholder, .ice-form input[type="url"]:focus::-moz-placeholder, .ice-form input[type="color"]:focus::-moz-placeholder, .ice-form input[type="date"]:focus::-moz-placeholder, .ice-form input[type="datetime"]:focus::-moz-placeholder, .ice-form input[type="datetime-local"]:focus::-moz-placeholder, .ice-form input[type="month"]:focus::-moz-placeholder, .ice-form input[type="time"]:focus::-moz-placeholder, .ice-form input[type="week"]:focus::-moz-placeholder, .ice-form textarea:focus::-moz-placeholder, .ice-form select:focus::-moz-placeholder {
+  color: #cccccc;
+}
+.ice-form input[type="email"]:focus:-ms-input-placeholder, .ice-form input[type="number"]:focus:-ms-input-placeholder, .ice-form input[type="password"]:focus:-ms-input-placeholder, .ice-form input[type="search"]:focus:-ms-input-placeholder, .ice-form input[type="tel"]:focus:-ms-input-placeholder, .ice-form input[type="text"]:focus:-ms-input-placeholder, .ice-form input[type="url"]:focus:-ms-input-placeholder, .ice-form input[type="color"]:focus:-ms-input-placeholder, .ice-form input[type="date"]:focus:-ms-input-placeholder, .ice-form input[type="datetime"]:focus:-ms-input-placeholder, .ice-form input[type="datetime-local"]:focus:-ms-input-placeholder, .ice-form input[type="month"]:focus:-ms-input-placeholder, .ice-form input[type="time"]:focus:-ms-input-placeholder, .ice-form input[type="week"]:focus:-ms-input-placeholder, .ice-form textarea:focus:-ms-input-placeholder, .ice-form select:focus:-ms-input-placeholder {
+  color: #cccccc;
+}
+.ice-form input[type="email"]:disabled, .ice-form input[type="number"]:disabled, .ice-form input[type="password"]:disabled, .ice-form input[type="search"]:disabled, .ice-form input[type="tel"]:disabled, .ice-form input[type="text"]:disabled, .ice-form input[type="url"]:disabled, .ice-form input[type="color"]:disabled, .ice-form input[type="date"]:disabled, .ice-form input[type="datetime"]:disabled, .ice-form input[type="datetime-local"]:disabled, .ice-form input[type="month"]:disabled, .ice-form input[type="time"]:disabled, .ice-form input[type="week"]:disabled, .ice-form textarea:disabled, .ice-form select:disabled {
+  opacity: 0.7;
+}
+.ice-form input[type="email"]::-webkit-input-placeholder, .ice-form input[type="number"]::-webkit-input-placeholder, .ice-form input[type="password"]::-webkit-input-placeholder, .ice-form input[type="search"]::-webkit-input-placeholder, .ice-form input[type="tel"]::-webkit-input-placeholder, .ice-form input[type="text"]::-webkit-input-placeholder, .ice-form input[type="url"]::-webkit-input-placeholder, .ice-form input[type="color"]::-webkit-input-placeholder, .ice-form input[type="date"]::-webkit-input-placeholder, .ice-form input[type="datetime"]::-webkit-input-placeholder, .ice-form input[type="datetime-local"]::-webkit-input-placeholder, .ice-form input[type="month"]::-webkit-input-placeholder, .ice-form input[type="time"]::-webkit-input-placeholder, .ice-form input[type="week"]::-webkit-input-placeholder, .ice-form textarea::-webkit-input-placeholder, .ice-form select::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+.ice-form input[type="email"]:-moz-placeholder, .ice-form input[type="number"]:-moz-placeholder, .ice-form input[type="password"]:-moz-placeholder, .ice-form input[type="search"]:-moz-placeholder, .ice-form input[type="tel"]:-moz-placeholder, .ice-form input[type="text"]:-moz-placeholder, .ice-form input[type="url"]:-moz-placeholder, .ice-form input[type="color"]:-moz-placeholder, .ice-form input[type="date"]:-moz-placeholder, .ice-form input[type="datetime"]:-moz-placeholder, .ice-form input[type="datetime-local"]:-moz-placeholder, .ice-form input[type="month"]:-moz-placeholder, .ice-form input[type="time"]:-moz-placeholder, .ice-form input[type="week"]:-moz-placeholder, .ice-form textarea:-moz-placeholder, .ice-form select:-moz-placeholder {
+  color: #a6a6a6;
+}
+.ice-form input[type="email"]::-moz-placeholder, .ice-form input[type="number"]::-moz-placeholder, .ice-form input[type="password"]::-moz-placeholder, .ice-form input[type="search"]::-moz-placeholder, .ice-form input[type="tel"]::-moz-placeholder, .ice-form input[type="text"]::-moz-placeholder, .ice-form input[type="url"]::-moz-placeholder, .ice-form input[type="color"]::-moz-placeholder, .ice-form input[type="date"]::-moz-placeholder, .ice-form input[type="datetime"]::-moz-placeholder, .ice-form input[type="datetime-local"]::-moz-placeholder, .ice-form input[type="month"]::-moz-placeholder, .ice-form input[type="time"]::-moz-placeholder, .ice-form input[type="week"]::-moz-placeholder, .ice-form textarea::-moz-placeholder, .ice-form select::-moz-placeholder {
+  color: #a6a6a6;
+}
+.ice-form input[type="email"]:-ms-input-placeholder, .ice-form input[type="number"]:-ms-input-placeholder, .ice-form input[type="password"]:-ms-input-placeholder, .ice-form input[type="search"]:-ms-input-placeholder, .ice-form input[type="tel"]:-ms-input-placeholder, .ice-form input[type="text"]:-ms-input-placeholder, .ice-form input[type="url"]:-ms-input-placeholder, .ice-form input[type="color"]:-ms-input-placeholder, .ice-form input[type="date"]:-ms-input-placeholder, .ice-form input[type="datetime"]:-ms-input-placeholder, .ice-form input[type="datetime-local"]:-ms-input-placeholder, .ice-form input[type="month"]:-ms-input-placeholder, .ice-form input[type="time"]:-ms-input-placeholder, .ice-form input[type="week"]:-ms-input-placeholder, .ice-form textarea:-ms-input-placeholder, .ice-form select:-ms-input-placeholder {
+  color: #a6a6a6;
+}
+.ice-form input[type="radio"]:checked + label,
+.ice-form input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+.ice-form input[type="radio"] + label,
+.ice-form input[type="checkbox"] + label {
+  cursor: pointer;
+  margin-right: 16px;
+  margin-left: -1.2em;
+  padding-left: 1.3em;
+  display: inline-block;
+}
+.ice-form textarea {
+  line-height: 1.67;
+}
+.ice-form select {
+  box-shadow: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+footer nav ol,
+header nav ol, aside nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer nav li,
+header nav li {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+}
+footer nav li > a,
+header nav li > a {
+  padding: 8px 16px;
+}
+footer nav li > a,
+header nav li > a {
+  display: inline-block;
+}
+footer nav li.active > a,
+header nav li.active > a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  footer nav li,
+  header nav li {
+    position: relative;
+    float: none;
+    margin-bottom: 8px 0;
+  }
+  footer nav li > a,
+  header nav li > a {
+    padding: 8px 0;
+  }
+  footer nav li:last-child,
+  header nav li:last-child {
+    margin-bottom: 0;
+  }
+  footer nav li > a,
+  header nav li > a {
+    display: inline-block;
+  }
+  footer nav li.active > a,
+  header nav li.active > a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+footer nav li.active > a,
+header nav li.active > a {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+}
+
+aside {
+  color: #666;
+}
+@media only screen and (min-width: 768px) {
+  aside {
+    float: right;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    width: 30%;
+  }
+}
+aside nav ol > li {
+  position: relative;
+  float: none;
+  margin-bottom: 8px 0;
+}
+aside nav ol > li > a {
+  padding: 8px 0;
+}
+aside nav ol > li:last-child {
+  margin-bottom: 0;
+}
+aside nav ol > li > a {
+  display: inline-block;
+}
+aside nav ol > li.active > a {
+  font-weight: bold;
+  text-decoration: none;
+}
+aside nav ol > li li > a {
+  padding-left: 32px;
+}
+aside form {
+  font-size: 14px;
+}
+aside form input[type="email"], aside form input[type="number"], aside form input[type="password"], aside form input[type="search"], aside form input[type="tel"], aside form input[type="text"], aside form input[type="url"], aside form input[type="color"], aside form input[type="date"], aside form input[type="datetime"], aside form input[type="datetime-local"], aside form input[type="month"], aside form input[type="time"], aside form input[type="week"], aside form textarea, aside form select {
+  font: inherit;
+  box-shadow: inset 1px 1px 7px 1px #00b300;
+  color: blue;
+  padding: 9.33333px;
+  border: 1px solid green;
+  width: 372px;
+  max-width: 100%;
+}
+aside form input[type="email"]:focus, aside form input[type="number"]:focus, aside form input[type="password"]:focus, aside form input[type="search"]:focus, aside form input[type="tel"]:focus, aside form input[type="text"]:focus, aside form input[type="url"]:focus, aside form input[type="color"]:focus, aside form input[type="date"]:focus, aside form input[type="datetime"]:focus, aside form input[type="datetime-local"]:focus, aside form input[type="month"]:focus, aside form input[type="time"]:focus, aside form input[type="week"]:focus, aside form textarea:focus, aside form select:focus {
+  outline: none;
+  box-shadow: 0 0 7px 1px #00b300;
+}
+aside form input[type="email"]:focus::-webkit-input-placeholder, aside form input[type="number"]:focus::-webkit-input-placeholder, aside form input[type="password"]:focus::-webkit-input-placeholder, aside form input[type="search"]:focus::-webkit-input-placeholder, aside form input[type="tel"]:focus::-webkit-input-placeholder, aside form input[type="text"]:focus::-webkit-input-placeholder, aside form input[type="url"]:focus::-webkit-input-placeholder, aside form input[type="color"]:focus::-webkit-input-placeholder, aside form input[type="date"]:focus::-webkit-input-placeholder, aside form input[type="datetime"]:focus::-webkit-input-placeholder, aside form input[type="datetime-local"]:focus::-webkit-input-placeholder, aside form input[type="month"]:focus::-webkit-input-placeholder, aside form input[type="time"]:focus::-webkit-input-placeholder, aside form input[type="week"]:focus::-webkit-input-placeholder, aside form textarea:focus::-webkit-input-placeholder, aside form select:focus::-webkit-input-placeholder {
+  color: white;
+}
+aside form input[type="email"]:focus:-moz-placeholder, aside form input[type="number"]:focus:-moz-placeholder, aside form input[type="password"]:focus:-moz-placeholder, aside form input[type="search"]:focus:-moz-placeholder, aside form input[type="tel"]:focus:-moz-placeholder, aside form input[type="text"]:focus:-moz-placeholder, aside form input[type="url"]:focus:-moz-placeholder, aside form input[type="color"]:focus:-moz-placeholder, aside form input[type="date"]:focus:-moz-placeholder, aside form input[type="datetime"]:focus:-moz-placeholder, aside form input[type="datetime-local"]:focus:-moz-placeholder, aside form input[type="month"]:focus:-moz-placeholder, aside form input[type="time"]:focus:-moz-placeholder, aside form input[type="week"]:focus:-moz-placeholder, aside form textarea:focus:-moz-placeholder, aside form select:focus:-moz-placeholder {
+  color: white;
+}
+aside form input[type="email"]:focus::-moz-placeholder, aside form input[type="number"]:focus::-moz-placeholder, aside form input[type="password"]:focus::-moz-placeholder, aside form input[type="search"]:focus::-moz-placeholder, aside form input[type="tel"]:focus::-moz-placeholder, aside form input[type="text"]:focus::-moz-placeholder, aside form input[type="url"]:focus::-moz-placeholder, aside form input[type="color"]:focus::-moz-placeholder, aside form input[type="date"]:focus::-moz-placeholder, aside form input[type="datetime"]:focus::-moz-placeholder, aside form input[type="datetime-local"]:focus::-moz-placeholder, aside form input[type="month"]:focus::-moz-placeholder, aside form input[type="time"]:focus::-moz-placeholder, aside form input[type="week"]:focus::-moz-placeholder, aside form textarea:focus::-moz-placeholder, aside form select:focus::-moz-placeholder {
+  color: white;
+}
+aside form input[type="email"]:focus:-ms-input-placeholder, aside form input[type="number"]:focus:-ms-input-placeholder, aside form input[type="password"]:focus:-ms-input-placeholder, aside form input[type="search"]:focus:-ms-input-placeholder, aside form input[type="tel"]:focus:-ms-input-placeholder, aside form input[type="text"]:focus:-ms-input-placeholder, aside form input[type="url"]:focus:-ms-input-placeholder, aside form input[type="color"]:focus:-ms-input-placeholder, aside form input[type="date"]:focus:-ms-input-placeholder, aside form input[type="datetime"]:focus:-ms-input-placeholder, aside form input[type="datetime-local"]:focus:-ms-input-placeholder, aside form input[type="month"]:focus:-ms-input-placeholder, aside form input[type="time"]:focus:-ms-input-placeholder, aside form input[type="week"]:focus:-ms-input-placeholder, aside form textarea:focus:-ms-input-placeholder, aside form select:focus:-ms-input-placeholder {
+  color: white;
+}
+aside form input[type="email"]:disabled, aside form input[type="number"]:disabled, aside form input[type="password"]:disabled, aside form input[type="search"]:disabled, aside form input[type="tel"]:disabled, aside form input[type="text"]:disabled, aside form input[type="url"]:disabled, aside form input[type="color"]:disabled, aside form input[type="date"]:disabled, aside form input[type="datetime"]:disabled, aside form input[type="datetime-local"]:disabled, aside form input[type="month"]:disabled, aside form input[type="time"]:disabled, aside form input[type="week"]:disabled, aside form textarea:disabled, aside form select:disabled {
+  opacity: 0.7;
+}
+aside form input[type="email"]::-webkit-input-placeholder, aside form input[type="number"]::-webkit-input-placeholder, aside form input[type="password"]::-webkit-input-placeholder, aside form input[type="search"]::-webkit-input-placeholder, aside form input[type="tel"]::-webkit-input-placeholder, aside form input[type="text"]::-webkit-input-placeholder, aside form input[type="url"]::-webkit-input-placeholder, aside form input[type="color"]::-webkit-input-placeholder, aside form input[type="date"]::-webkit-input-placeholder, aside form input[type="datetime"]::-webkit-input-placeholder, aside form input[type="datetime-local"]::-webkit-input-placeholder, aside form input[type="month"]::-webkit-input-placeholder, aside form input[type="time"]::-webkit-input-placeholder, aside form input[type="week"]::-webkit-input-placeholder, aside form textarea::-webkit-input-placeholder, aside form select::-webkit-input-placeholder {
+  color: #e5e5ff;
+}
+aside form input[type="email"]:-moz-placeholder, aside form input[type="number"]:-moz-placeholder, aside form input[type="password"]:-moz-placeholder, aside form input[type="search"]:-moz-placeholder, aside form input[type="tel"]:-moz-placeholder, aside form input[type="text"]:-moz-placeholder, aside form input[type="url"]:-moz-placeholder, aside form input[type="color"]:-moz-placeholder, aside form input[type="date"]:-moz-placeholder, aside form input[type="datetime"]:-moz-placeholder, aside form input[type="datetime-local"]:-moz-placeholder, aside form input[type="month"]:-moz-placeholder, aside form input[type="time"]:-moz-placeholder, aside form input[type="week"]:-moz-placeholder, aside form textarea:-moz-placeholder, aside form select:-moz-placeholder {
+  color: #e5e5ff;
+}
+aside form input[type="email"]::-moz-placeholder, aside form input[type="number"]::-moz-placeholder, aside form input[type="password"]::-moz-placeholder, aside form input[type="search"]::-moz-placeholder, aside form input[type="tel"]::-moz-placeholder, aside form input[type="text"]::-moz-placeholder, aside form input[type="url"]::-moz-placeholder, aside form input[type="color"]::-moz-placeholder, aside form input[type="date"]::-moz-placeholder, aside form input[type="datetime"]::-moz-placeholder, aside form input[type="datetime-local"]::-moz-placeholder, aside form input[type="month"]::-moz-placeholder, aside form input[type="time"]::-moz-placeholder, aside form input[type="week"]::-moz-placeholder, aside form textarea::-moz-placeholder, aside form select::-moz-placeholder {
+  color: #e5e5ff;
+}
+aside form input[type="email"]:-ms-input-placeholder, aside form input[type="number"]:-ms-input-placeholder, aside form input[type="password"]:-ms-input-placeholder, aside form input[type="search"]:-ms-input-placeholder, aside form input[type="tel"]:-ms-input-placeholder, aside form input[type="text"]:-ms-input-placeholder, aside form input[type="url"]:-ms-input-placeholder, aside form input[type="color"]:-ms-input-placeholder, aside form input[type="date"]:-ms-input-placeholder, aside form input[type="datetime"]:-ms-input-placeholder, aside form input[type="datetime-local"]:-ms-input-placeholder, aside form input[type="month"]:-ms-input-placeholder, aside form input[type="time"]:-ms-input-placeholder, aside form input[type="week"]:-ms-input-placeholder, aside form textarea:-ms-input-placeholder, aside form select:-ms-input-placeholder {
+  color: #e5e5ff;
+}
+aside form input[type="radio"]:checked + label,
+aside form input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+aside form input[type="radio"] + label,
+aside form input[type="checkbox"] + label {
+  cursor: pointer;
+  margin-right: 16px;
+  margin-left: -1.2em;
+  padding-left: 1.3em;
+  display: inline-block;
+}
+aside form textarea {
+  line-height: 1.67;
+}
+aside form select {
+  box-shadow: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  form {
+    color: green;
+  }
+}
+@media only screen and (min-width: 479px) and (max-width: 979px) {
+  form {
+    color: blue;
+  }
+}
+@media only screen and (min-width: 980px) {
+  form {
+    color: red;
+  }
+}
+
+.ice-form-large {
+  font-size: 26px;
+}
+.ice-form-large input[type="email"], .ice-form-large input[type="number"], .ice-form-large input[type="password"], .ice-form-large input[type="search"], .ice-form-large input[type="tel"], .ice-form-large input[type="text"], .ice-form-large input[type="url"], .ice-form-large input[type="color"], .ice-form-large input[type="date"], .ice-form-large input[type="datetime"], .ice-form-large input[type="datetime-local"], .ice-form-large input[type="month"], .ice-form-large input[type="time"], .ice-form-large input[type="week"], .ice-form-large textarea, .ice-form-large select {
+  font: inherit;
+  box-shadow: inset 1px 1px 13px 1px blue;
+  color: green;
+  padding: 17.33333px;
+  border: 1px solid red;
+  width: 372px;
+  max-width: 100%;
+}
+.ice-form-large input[type="email"]:focus, .ice-form-large input[type="number"]:focus, .ice-form-large input[type="password"]:focus, .ice-form-large input[type="search"]:focus, .ice-form-large input[type="tel"]:focus, .ice-form-large input[type="text"]:focus, .ice-form-large input[type="url"]:focus, .ice-form-large input[type="color"]:focus, .ice-form-large input[type="date"]:focus, .ice-form-large input[type="datetime"]:focus, .ice-form-large input[type="datetime-local"]:focus, .ice-form-large input[type="month"]:focus, .ice-form-large input[type="time"]:focus, .ice-form-large input[type="week"]:focus, .ice-form-large textarea:focus, .ice-form-large select:focus {
+  outline: none;
+  box-shadow: 0 0 13px 1px blue;
+}
+.ice-form-large input[type="email"]:focus::-webkit-input-placeholder, .ice-form-large input[type="number"]:focus::-webkit-input-placeholder, .ice-form-large input[type="password"]:focus::-webkit-input-placeholder, .ice-form-large input[type="search"]:focus::-webkit-input-placeholder, .ice-form-large input[type="tel"]:focus::-webkit-input-placeholder, .ice-form-large input[type="text"]:focus::-webkit-input-placeholder, .ice-form-large input[type="url"]:focus::-webkit-input-placeholder, .ice-form-large input[type="color"]:focus::-webkit-input-placeholder, .ice-form-large input[type="date"]:focus::-webkit-input-placeholder, .ice-form-large input[type="datetime"]:focus::-webkit-input-placeholder, .ice-form-large input[type="datetime-local"]:focus::-webkit-input-placeholder, .ice-form-large input[type="month"]:focus::-webkit-input-placeholder, .ice-form-large input[type="time"]:focus::-webkit-input-placeholder, .ice-form-large input[type="week"]:focus::-webkit-input-placeholder, .ice-form-large textarea:focus::-webkit-input-placeholder, .ice-form-large select:focus::-webkit-input-placeholder {
+  color: #b3ffb3;
+}
+.ice-form-large input[type="email"]:focus:-moz-placeholder, .ice-form-large input[type="number"]:focus:-moz-placeholder, .ice-form-large input[type="password"]:focus:-moz-placeholder, .ice-form-large input[type="search"]:focus:-moz-placeholder, .ice-form-large input[type="tel"]:focus:-moz-placeholder, .ice-form-large input[type="text"]:focus:-moz-placeholder, .ice-form-large input[type="url"]:focus:-moz-placeholder, .ice-form-large input[type="color"]:focus:-moz-placeholder, .ice-form-large input[type="date"]:focus:-moz-placeholder, .ice-form-large input[type="datetime"]:focus:-moz-placeholder, .ice-form-large input[type="datetime-local"]:focus:-moz-placeholder, .ice-form-large input[type="month"]:focus:-moz-placeholder, .ice-form-large input[type="time"]:focus:-moz-placeholder, .ice-form-large input[type="week"]:focus:-moz-placeholder, .ice-form-large textarea:focus:-moz-placeholder, .ice-form-large select:focus:-moz-placeholder {
+  color: #b3ffb3;
+}
+.ice-form-large input[type="email"]:focus::-moz-placeholder, .ice-form-large input[type="number"]:focus::-moz-placeholder, .ice-form-large input[type="password"]:focus::-moz-placeholder, .ice-form-large input[type="search"]:focus::-moz-placeholder, .ice-form-large input[type="tel"]:focus::-moz-placeholder, .ice-form-large input[type="text"]:focus::-moz-placeholder, .ice-form-large input[type="url"]:focus::-moz-placeholder, .ice-form-large input[type="color"]:focus::-moz-placeholder, .ice-form-large input[type="date"]:focus::-moz-placeholder, .ice-form-large input[type="datetime"]:focus::-moz-placeholder, .ice-form-large input[type="datetime-local"]:focus::-moz-placeholder, .ice-form-large input[type="month"]:focus::-moz-placeholder, .ice-form-large input[type="time"]:focus::-moz-placeholder, .ice-form-large input[type="week"]:focus::-moz-placeholder, .ice-form-large textarea:focus::-moz-placeholder, .ice-form-large select:focus::-moz-placeholder {
+  color: #b3ffb3;
+}
+.ice-form-large input[type="email"]:focus:-ms-input-placeholder, .ice-form-large input[type="number"]:focus:-ms-input-placeholder, .ice-form-large input[type="password"]:focus:-ms-input-placeholder, .ice-form-large input[type="search"]:focus:-ms-input-placeholder, .ice-form-large input[type="tel"]:focus:-ms-input-placeholder, .ice-form-large input[type="text"]:focus:-ms-input-placeholder, .ice-form-large input[type="url"]:focus:-ms-input-placeholder, .ice-form-large input[type="color"]:focus:-ms-input-placeholder, .ice-form-large input[type="date"]:focus:-ms-input-placeholder, .ice-form-large input[type="datetime"]:focus:-ms-input-placeholder, .ice-form-large input[type="datetime-local"]:focus:-ms-input-placeholder, .ice-form-large input[type="month"]:focus:-ms-input-placeholder, .ice-form-large input[type="time"]:focus:-ms-input-placeholder, .ice-form-large input[type="week"]:focus:-ms-input-placeholder, .ice-form-large textarea:focus:-ms-input-placeholder, .ice-form-large select:focus:-ms-input-placeholder {
+  color: #b3ffb3;
+}
+.ice-form-large input[type="email"]:disabled, .ice-form-large input[type="number"]:disabled, .ice-form-large input[type="password"]:disabled, .ice-form-large input[type="search"]:disabled, .ice-form-large input[type="tel"]:disabled, .ice-form-large input[type="text"]:disabled, .ice-form-large input[type="url"]:disabled, .ice-form-large input[type="color"]:disabled, .ice-form-large input[type="date"]:disabled, .ice-form-large input[type="datetime"]:disabled, .ice-form-large input[type="datetime-local"]:disabled, .ice-form-large input[type="month"]:disabled, .ice-form-large input[type="time"]:disabled, .ice-form-large input[type="week"]:disabled, .ice-form-large textarea:disabled, .ice-form-large select:disabled {
+  opacity: 0.7;
+}
+.ice-form-large input[type="email"]::-webkit-input-placeholder, .ice-form-large input[type="number"]::-webkit-input-placeholder, .ice-form-large input[type="password"]::-webkit-input-placeholder, .ice-form-large input[type="search"]::-webkit-input-placeholder, .ice-form-large input[type="tel"]::-webkit-input-placeholder, .ice-form-large input[type="text"]::-webkit-input-placeholder, .ice-form-large input[type="url"]::-webkit-input-placeholder, .ice-form-large input[type="color"]::-webkit-input-placeholder, .ice-form-large input[type="date"]::-webkit-input-placeholder, .ice-form-large input[type="datetime"]::-webkit-input-placeholder, .ice-form-large input[type="datetime-local"]::-webkit-input-placeholder, .ice-form-large input[type="month"]::-webkit-input-placeholder, .ice-form-large input[type="time"]::-webkit-input-placeholder, .ice-form-large input[type="week"]::-webkit-input-placeholder, .ice-form-large textarea::-webkit-input-placeholder, .ice-form-large select::-webkit-input-placeholder {
+  color: #66ff66;
+}
+.ice-form-large input[type="email"]:-moz-placeholder, .ice-form-large input[type="number"]:-moz-placeholder, .ice-form-large input[type="password"]:-moz-placeholder, .ice-form-large input[type="search"]:-moz-placeholder, .ice-form-large input[type="tel"]:-moz-placeholder, .ice-form-large input[type="text"]:-moz-placeholder, .ice-form-large input[type="url"]:-moz-placeholder, .ice-form-large input[type="color"]:-moz-placeholder, .ice-form-large input[type="date"]:-moz-placeholder, .ice-form-large input[type="datetime"]:-moz-placeholder, .ice-form-large input[type="datetime-local"]:-moz-placeholder, .ice-form-large input[type="month"]:-moz-placeholder, .ice-form-large input[type="time"]:-moz-placeholder, .ice-form-large input[type="week"]:-moz-placeholder, .ice-form-large textarea:-moz-placeholder, .ice-form-large select:-moz-placeholder {
+  color: #66ff66;
+}
+.ice-form-large input[type="email"]::-moz-placeholder, .ice-form-large input[type="number"]::-moz-placeholder, .ice-form-large input[type="password"]::-moz-placeholder, .ice-form-large input[type="search"]::-moz-placeholder, .ice-form-large input[type="tel"]::-moz-placeholder, .ice-form-large input[type="text"]::-moz-placeholder, .ice-form-large input[type="url"]::-moz-placeholder, .ice-form-large input[type="color"]::-moz-placeholder, .ice-form-large input[type="date"]::-moz-placeholder, .ice-form-large input[type="datetime"]::-moz-placeholder, .ice-form-large input[type="datetime-local"]::-moz-placeholder, .ice-form-large input[type="month"]::-moz-placeholder, .ice-form-large input[type="time"]::-moz-placeholder, .ice-form-large input[type="week"]::-moz-placeholder, .ice-form-large textarea::-moz-placeholder, .ice-form-large select::-moz-placeholder {
+  color: #66ff66;
+}
+.ice-form-large input[type="email"]:-ms-input-placeholder, .ice-form-large input[type="number"]:-ms-input-placeholder, .ice-form-large input[type="password"]:-ms-input-placeholder, .ice-form-large input[type="search"]:-ms-input-placeholder, .ice-form-large input[type="tel"]:-ms-input-placeholder, .ice-form-large input[type="text"]:-ms-input-placeholder, .ice-form-large input[type="url"]:-ms-input-placeholder, .ice-form-large input[type="color"]:-ms-input-placeholder, .ice-form-large input[type="date"]:-ms-input-placeholder, .ice-form-large input[type="datetime"]:-ms-input-placeholder, .ice-form-large input[type="datetime-local"]:-ms-input-placeholder, .ice-form-large input[type="month"]:-ms-input-placeholder, .ice-form-large input[type="time"]:-ms-input-placeholder, .ice-form-large input[type="week"]:-ms-input-placeholder, .ice-form-large textarea:-ms-input-placeholder, .ice-form-large select:-ms-input-placeholder {
+  color: #66ff66;
+}
+.ice-form-large input[type="radio"]:checked + label,
+.ice-form-large input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+.ice-form-large input[type="radio"] + label,
+.ice-form-large input[type="checkbox"] + label {
+  cursor: pointer;
+  margin-right: 16px;
+  margin-left: -1.2em;
+  padding-left: 1.3em;
+  display: inline-block;
+}
+.ice-form-large textarea {
+  line-height: 1.67;
+}
+.ice-form-large select {
+  box-shadow: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.a {
+  color: red;
+}
+
+.b {
+  color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+  .my-layout .my-content {
+    float: left;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .my-layout .my-sidebar {
+    float: right;
+    width: 30%;
+  }
+}

@@ -6,26 +6,95 @@
 @import "../patterns/_typography";
 @import "../patterns/_forms";
 @import "../patterns/_responsive";
+@import "../patterns/_navigation";
 
+html {
+    font-size: $ice-font-size;
+}
 
-h1, h2 {
-    @extend %block;
-    @extend %text;
+h1, h2, h3, nav, p {
+    @extend %ice-block;
+    @extend %ice-text;
+}
+
+h1 {
+    @extend %ice-font-hero;
+}
+
+footer,
+header {
+    nav {
+        ol {
+            @extend %ice-nav;
+        }
+        li {
+            @extend %ice-nav-horizontal-item;
+
+            @include ice-respond($ice-respond-mobile) {
+                @include ice-nav-item($direction: "vertical",
+                                      $padding: $ice-block-gutter / 2 0);
+            }
+
+            &.active {
+                @include ice-nav-item-active() {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+section {
+    h3 {
+        @extend %ice-font-heading;
+    }
+
+    h4 {
+        @extend %ice-font-title;
+    }
 }
 
 aside {
-    @extend %font-smaller;
+    @extend %ice-font-small;
 
     @include ice-respond($ice-respond-tablet-desktop) {
-        @include pull-right;
-
+        @include ice-pull(right);
         width: 30%;
+    }
+
+    color: #666;
+
+    h3 {
+        @extend %ice-font-heading;
+    }
+
+    h4 {
+        @extend %ice-font-title;
+    }
+
+    nav {
+
+        ol {
+            @extend %ice-nav;
+
+            > li {
+                @include ice-nav-item($direction: vertical,
+                                      $active: ".active",
+                                      $padding: $ice-block-gutter / 2 0);
+
+                li > a {
+                    padding-left: $ice-block-gutter * 2;
+                }
+            }
+        }
     }
 
     form {
         @include ice-form($size: 14px, $border: green, $color: blue);
     }
 }
+
 
 form {
     @include ice-respond($ice-respond-mobile) {
@@ -39,14 +108,52 @@ form {
     }
 }
 
-.ice-form-large {
-    @include ice-form($size: 26px, $border: red, $color: green, $shadow: blue);
+footer {
+    @extend %ice-font-small;
+    @extend %ice-block-clear;
+}
+
+.ice-inner {
+    @extend %ice-block-inner;
 }
 
 .ice-form {
     @extend %ice-form;
 }
 
-.ice-container {
-    @extend %container;
+.ice-form-large {
+    @include ice-form($size: 26px, $border: red, $color: green, $shadow: blue);
 }
+
+.ice-container {
+    @extend %ice-block-container;
+}
+
+.a {
+    @extend %ice-block-pull-right;
+    color: red;
+}
+
+.b {
+    @extend %ice-block-pull-right;
+    color: blue;
+}
+
+
+.my-layout {
+    @extend %ice-block-container;
+
+    .my-content {
+        @include ice-respond($ice-respond-tablet-desktop) {
+            float: left;
+            width: 70%;
+        }
+    }
+    .my-sidebar {
+        @include ice-respond($ice-respond-tablet-desktop) {
+            float: right;
+            width: 30%;
+        }
+    }
+}
+
