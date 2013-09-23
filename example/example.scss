@@ -138,22 +138,3 @@ footer {
     @extend %ice-block-pull-right;
     color: blue;
 }
-
-
-.my-layout {
-    @extend %ice-block-container;
-
-    .my-content {
-        @include ice-respond($ice-respond-tablet-desktop) {
-            float: left;
-            width: 70%;
-        }
-    }
-    .my-sidebar {
-        @include ice-respond($ice-respond-tablet-desktop) {
-            float: right;
-            width: 30%;
-        }
-    }
-}
-

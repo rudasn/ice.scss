@@ -18,18 +18,18 @@
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 /* Hide visually and from screenreaders, but maintain layout */
 /* Contain floats: h5bp.com/q */
-.ice-container:before, .my-layout:before, footer:before, footer nav ol:before,
-header nav ol:before, aside nav ol:before, .ice-container:after, .my-layout:after, footer:after, footer nav ol:after,
+.ice-container:before, footer:before, footer nav ol:before,
+header nav ol:before, aside nav ol:before, .ice-container:after, footer:after, footer nav ol:after,
 header nav ol:after, aside nav ol:after {
   content: "";
   display: table;
 }
-.ice-container:after, .my-layout:after, footer:after, footer nav ol:after,
+.ice-container:after, footer:after, footer nav ol:after,
 header nav ol:after, aside nav ol:after {
   clear: both;
 }
 
-.ice-container, .my-layout, .ice-inner, .ice-form input[type="email"], .ice-form input[type="number"], .ice-form input[type="password"], .ice-form input[type="search"], .ice-form input[type="tel"], .ice-form input[type="text"], .ice-form input[type="url"], .ice-form input[type="color"], .ice-form input[type="date"], .ice-form input[type="datetime"], .ice-form input[type="datetime-local"], .ice-form input[type="month"], .ice-form input[type="time"], .ice-form input[type="week"], .ice-form textarea, .ice-form select, aside form input[type="email"], aside form input[type="number"], aside form input[type="password"], aside form input[type="search"], aside form input[type="tel"], aside form input[type="text"], aside form input[type="url"], aside form input[type="color"], aside form input[type="date"], aside form input[type="datetime"], aside form input[type="datetime-local"], aside form input[type="month"], aside form input[type="time"], aside form input[type="week"], aside form textarea, aside form select, .ice-form-large input[type="email"], .ice-form-large input[type="number"], .ice-form-large input[type="password"], .ice-form-large input[type="search"], .ice-form-large input[type="tel"], .ice-form-large input[type="text"], .ice-form-large input[type="url"], .ice-form-large input[type="color"], .ice-form-large input[type="date"], .ice-form-large input[type="datetime"], .ice-form-large input[type="datetime-local"], .ice-form-large input[type="month"], .ice-form-large input[type="time"], .ice-form-large input[type="week"], .ice-form-large textarea, .ice-form-large select {
+.ice-container, .ice-inner, .ice-form input[type="email"], .ice-form input[type="number"], .ice-form input[type="password"], .ice-form input[type="search"], .ice-form input[type="tel"], .ice-form input[type="text"], .ice-form input[type="url"], .ice-form input[type="color"], .ice-form input[type="date"], .ice-form input[type="datetime"], .ice-form input[type="datetime-local"], .ice-form input[type="month"], .ice-form input[type="time"], .ice-form input[type="week"], .ice-form textarea, .ice-form select, aside form input[type="email"], aside form input[type="number"], aside form input[type="password"], aside form input[type="search"], aside form input[type="tel"], aside form input[type="text"], aside form input[type="url"], aside form input[type="color"], aside form input[type="date"], aside form input[type="datetime"], aside form input[type="datetime-local"], aside form input[type="month"], aside form input[type="time"], aside form input[type="week"], aside form textarea, aside form select, .ice-form-large input[type="email"], .ice-form-large input[type="number"], .ice-form-large input[type="password"], .ice-form-large input[type="search"], .ice-form-large input[type="tel"], .ice-form-large input[type="text"], .ice-form-large input[type="url"], .ice-form-large input[type="color"], .ice-form-large input[type="date"], .ice-form-large input[type="datetime"], .ice-form-large input[type="datetime-local"], .ice-form-large input[type="month"], .ice-form-large input[type="time"], .ice-form-large input[type="week"], .ice-form-large textarea, .ice-form-large select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -40,7 +40,7 @@ h1, h2, h3, nav, p {
   margin-bottom: 16px;
 }
 
-.ice-container, .my-layout {
+.ice-container {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -396,17 +396,4 @@ aside form select {
 
 .b {
   color: blue;
-}
-
-@media only screen and (min-width: 768px) {
-  .my-layout .my-content {
-    float: left;
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .my-layout .my-sidebar {
-    float: right;
-    width: 30%;
-  }
 }
