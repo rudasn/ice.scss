@@ -1,22 +1,22 @@
 # ice.scss
 
-A handy collection of SCSS/Sass placeholders and mixins.
+A collection of SCSS patterns (placeholders and mixins).
 
-**How ``ice`` is different from other CSS frameworks**
+**Ice does not produced any CSS.** There is no namespace pollution, no clutter, no rules you'll never use in million years.
 
-When processed Ice does not produced any CSS. There is no namespace pollution, no clutter, no rules you'll never in million years.
+You are responsible for defining your own selectors according to your project's existing style guides.
 
-You as the user are responsible for defining your own selectors, with the class names that suit your project's existing style guides.
-
-Since it's all SCSS placeholders and mixins you get the added benefit of having grouped selectors instead of the same rules defined and applied in multiple places. This makes your CSS much smaller and much more compact and keeps your source files as readable as you make them.
+You get the added benefit of having **grouped selectors** instead of the same rules defined and applied in multiple places. This makes your CSS much smaller and compact.
 
 ## Example
 
 Let's say you just need to define a simple, responsive two-column layout.
 
-In your .scss file:
+In your ```.scss``` file:
 
-```css
+```scss
+@import "ice/ice";
+
 .my-layout {
     @extend %ice-block-container;
 
@@ -57,10 +57,6 @@ Produces the following CSS:
   margin-left: auto;
   margin-right: auto;
   max-width: 980px;
-}
-
-html {
-  font-size: 16px;
 }
 
 @media only screen and (min-width: 768px) {
