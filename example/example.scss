@@ -1,12 +1,4 @@
-@import "../bourbon/bourbon";
-
-@import "../_variables";
-@import "../patterns/_helpers";
-@import "../patterns/_blocks";
-@import "../patterns/_typography";
-@import "../patterns/_forms";
-@import "../patterns/_responsive";
-@import "../patterns/_navigation";
+@import "../ice/ice";
 
 html {
     font-size: $ice-font-size;
@@ -55,13 +47,24 @@ section {
     }
 }
 
-aside {
-    @extend %ice-font-small;
-
+section {
     @include ice-respond($ice-respond-tablet-desktop) {
-        @include ice-pull(right);
+        float: left;
+        width: 70%;
+    }
+
+}
+
+aside {
+    @include ice-respond($ice-respond-tablet-desktop) {
+        float: right;
         width: 30%;
     }
+
+}
+
+aside {
+    @extend %ice-font-small;
 
     color: #666;
 

@@ -93,3 +93,5 @@ Produces the following CSS:
 ## Resources
 * Responsive
     * http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32 
+* Typography
+    * http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/   
