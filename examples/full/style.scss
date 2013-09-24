@@ -1,0 +1,88 @@
+@import "../../ice/ice";
+@import "../../ice/_normalice";
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500; /* normal */
+}
+
+h1, h2, h3, h4, h5, h6,
+p, table, blockquote, fieldset, pre,
+figure, address,
+ol, ul, dl {
+    @extend %ice-block; // margins
+}
+
+h1, h2, h3, h4, h5, h6, p,
+ol, ul, dl, address {
+    @extend %ice-text; // line-height & max width
+}
+
+hr {
+    @extend %ice-hr;
+}
+
+img {
+    @extend %ice-image;
+}
+
+address {
+    @extend %ice-text-address;
+}
+
+form {
+    @extend %ice-form;
+}
+
+dl {
+    @extend %ice-list-dl;
+}
+
+nav {
+    ol, ul {
+        @extend %ice-nav;
+    }
+}
+
+ol, ul {
+    @extend %ice-list;
+}
+
+table {
+    @extend %ice-table;
+}
+
+.ice-wrapper {
+    @extend %ice-block-container;
+}
+
+.ice-example {
+    @extend %ice-block;
+
+    padding: $ice-block-gutter;
+    background-color: #f1f1f1;
+     // padding: $ice-block-gutter $ice-block-gutter 0 $ice-block-gutter;
+    // border-top: 2px solid #ccc;
+    // border-bottom: 2px solid #ccc;
+    // border-left: 1px solid;
+}
+
+.ice-hero {
+    @extend %ice-font-hero;
+}
+
+.ice-heading {
+    @extend %ice-font-heading;
+}
+
+.ice-title {
+    @extend %ice-font-title;
+}
+
+.ice-large {
+    @extend %ice-font-large;
+}
+
+.ice-small {
+    @extend %ice-font-small;
+}

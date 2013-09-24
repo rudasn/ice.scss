@@ -4,8 +4,8 @@
 }
 
 %ice-font-hero {
-
     font-size: $ice-font-hero-size + em;
+    line-height: 1;
 }
 
 %ice-font-heading {
@@ -26,4 +26,42 @@
 %ice-font-small {
 
     font-size: $ice-font-small-size + em;
+}
+
+%ice-text-address {
+
+    font-style: normal;
+}
+
+%ice-list-dl {
+    dt {
+        font-weight: bold;
+        margin-top: $ice-block-gutter;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    dd {
+        margin-left: $ice-block-gutter * 2;
+    }
+}
+
+%ice-list {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+%ice-table {
+    width: 100%;
+    max-width: 100%;
+
+    th {
+        text-align: left;
+    }
+
+    th, td {
+        padding: $ice-block-gutter / 2.5;
+    }
 }

@@ -2,13 +2,19 @@
 
 A collection of SCSS patterns (placeholders and mixins).
 
-**Ice does not produce any CSS unless you tell it to.**
+Although Ice borrows many concepts and code from several other projects, including Bootstrap, Foundation, and Bourbon, it has a different philosophy.
 
-Ice does not define any class names or any selectors. You are responsible for defining your own selectors according to your project's existing style guides.
+## Philosophy
 
-Since Ice is based on SCSS placeholders and mixins, you get the added benefit of having **grouped selectors** instead of the same rules defined and applied in multiple places. This makes your CSS much smaller and compact.
+* **Bring your own style guide** - Ice does not dictate how your CSS should be organized and how you name your selectors.
 
-## Example
+* **Minimal** - Ice does not generate any CSS unless you tell it to.
+
+* **Performant** - Ice tries to group selectors and minimize overrides leading to smaller file size and faster rendering times.
+
+* **Just a toolbox** - Ice provides *patterns*. How and if you use them is up to you. You only get what you use.
+
+### Example
 
 Let's say you just need to define a simple, responsive two-column layout.
 
@@ -88,9 +94,15 @@ Produces the following CSS:
 ### Helpers
 
 ## Roadmap
-* Documentation
 
-## Resources
+* Testing
+* Documentation
+* Remove dependencies (bourbon, normalize), include some code from those in ice/addons, ice/css3, ice/grid and ice/normalice.
+* Themable
+* Resources
+
+## Resources & Further Reading
+
 * Responsive
     * http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32 
 * Typography

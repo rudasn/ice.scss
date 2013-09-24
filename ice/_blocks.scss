@@ -58,3 +58,16 @@
 
     text-align: center;
 }
+
+%ice-hr {
+    border: none;
+    margin-top: $ice-block-gutter;
+    margin-bottom: $ice-block-gutter;
+    border-top: 2px solid;
+}
+
+%ice-image {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}

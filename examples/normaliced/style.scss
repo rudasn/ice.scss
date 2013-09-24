@@ -1,0 +1,15 @@
+@import "../../ice/ice";
+@import "../../ice/_normalice";
+
+/*! Example styles */
+.normaliced-wrapper {
+    @extend %ice-block-container;
+}
+
+.normaliced-example {
+    @extend %ice-block;
+
+    padding: $ice-block-gutter $ice-block-gutter 0 $ice-block-gutter;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}

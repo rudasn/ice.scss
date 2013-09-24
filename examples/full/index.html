@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ice Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="ice-wrapper">
+    <h1>Normaliced</h1>
+    <hr>
+    <h2>Typography</h2>
+    <h3>Headings</h3>
+    <div class="ice-example">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </div>
+    <h3>Sizes</h3>
+    <div class="ice-example">
+        <p class="ice-hero">Hero</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="ice-heading">Heading</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="ice-title">Title</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="ice-large">Large</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="ice-small">Small</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <h3>Paragraphs</h3>
+    <div class="ice-example">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+            <dfn title="Definition">DFN</dfn>
+            <abbr title="Abbreviation">ABBR</abbr>
+            Sub<sub>Text</sub>
+            Sup<sup>Text</sup>
+            <mark>mark</mark>
+            <strong>strong</strong>
+            <em>emphasis</em>
+        </p>
+    </div>
+    <h3>Lists</h3>
+    <h4>Ordered</h4>
+    <div class="ice-example">
+        <ol>
+            <li>Labore et dolore magna aliqua.</li>
+            <li>Consectetur adipisicing elit.</li>
+            <li>Aute irure dolor.</li>
+            <li>Reprehenderit in voluptate.</li>
+        </ol>
+    </div>
+    <h4>Unordered</h4>
+    <div class="ice-example">
+        <ul>
+            <li>labore et dolore magna aliqua</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                <ol>
+                    <li>labore et dolore magna aliqua</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elitm ad minim veniam, quis nostrud exercitation ullamco.
+                        <ol>
+                            <li>aute irure dolor in reprehenderit</li>
+                            <li>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>aute irure dolor in reprehenderit</li>
+            <li>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+        </ul>
+    </div>
+    <h4>Definition</h4>
+    <div class="ice-example">
+        <dl>
+            <dt>Consectetur adipisicing</dt>
+            <dd>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</dd>
+            <dt>Eiusmod tempor incididunt ut labore et dolore</dt>
+            <dd>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+            <dt>Consectetur adipisicing</dt>
+            <dd>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</dd>
+        </dl>
+    </div>
+    <h4>Address</h4>
+    <div class="ice-example">
+        <address>
+            <strong>Ice</strong><br>
+            github.com/rudasn/ice.scss<br>
+        </address>
+    </div>
+    <h3>Quotes</h3>
+    <div class="ice-example">
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <q>this is the quoted text</q>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <h3>Code</h3>
+    <div class="ice-example">
+        <pre><code>/* Fix so tags get normal text size also in some versions of Firefox, Safari, Konqueror, Chrome etc. */
+        tt, code, pre {
+            font-family: monospace, sans-serif;
+        }
+
+        /* Fix so tags, and .css and .js pages, get normal text size
+           also in some versions of Firefox, Safari, Konqueror, Chrome etc. */
+        div.mw-geshi div,
+        pre {
+          font-family: monospace, sans-serif !important;
+        }
+
+        /* Google Analytics */
+        var _gaq = [['_setAccount', 'UA-XXXXX'], ['_trackPageview']];
+        (function(d, t) {var g = d.createElement(t), s = d.getElementsByTagName(t)[0];g.async = true;g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';s.parentNode.insertBefore(g, s);})(document, 'script');
+        </code></pre>
+    </div>
+    <hr>
+    <h2>Forms</h2>
+    <div class="ice-example">
+        <form>
+            <p>
+                <input type="checkbox" placeholder="" value="" id="ns-ssguide-checkbox">
+                <label for="ns-ssguide-checkbox">A checkbox</label>
+                <input type="checkbox" placeholder="" value="" id="ns-ssguide-checkbox-2" checked>
+                <label for="ns-ssguide-checkbox-2">Another checkbox</label>
+            </p>
+            <p>
+                <select>
+                    <option></option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <optgroup label="Option 4">
+                        <option>Option 4.1</option>
+                        <option>Option 4.2</option>
+                        <option>Option 4.3</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <option></option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <optgroup label="Option 4">
+                        <option>Option 4.1</option>
+                        <option selected>Option 4.2</option>
+                        <option>Option 4.3</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="radio" name="ns-ssguide-radio" id="ns-ssguide-radio-1">
+                <label for="ns-ssguide-radio-1">Option 1</label>
+                <input type="radio" name="ns-ssguide-radio" id="ns-ssguide-radio-2">
+                <label for="ns-ssguide-radio-2">Option 2</label>
+                <input type="radio" name="ns-ssguide-radio" id="ns-ssguide-radio-3">
+                <label for="ns-ssguide-radio-3">Option 3</label>
+                <input type="radio" name="ns-ssguide-radio" id="ns-ssguide-radio-4" checked>
+                <label for="ns-ssguide-radio-4">None</label>
+            </p>
+            <p>
+                <input type="text" placeholder="" value="Text">
+                <input type="text" placeholder="Text placeholder" value="">
+            </p>
+            <p>
+                <input type="password" placeholder="" value="Password">
+                <input type="password" placeholder="Password placeholder" value="">
+            </p>
+            <p>
+                <input type="email" placeholder="" value="E-mail">
+                <input type="email" placeholder="E-mail placeholder" value="">
+            </p>
+            <p>
+                <input type="url" placeholder="" value="URL">
+                <input type="url" placeholder="URL placeholder" value="">
+            </p>
+            <p>
+                <input type="search" placeholder="" value="Search">
+                <input type="search" placeholder="Search placeholder" value="">
+            </p>
+            <p>
+                <input type="number" placeholder="" value="Number">
+                <input type="number" placeholder="Number placeholder" value="">
+            </p>
+            <p>
+                <textarea>Textarea</textarea>
+                <textarea placeholder="Textarea placeholder"></textarea>
+
+            </p>
+        </form>
+    </div>
+    <hr>
+    <h2>Navigation</h2>
+    <nav class="ice-example">
+        <ol>
+            <li><a href="">Consectetur adipisicing</a></li>
+            <li><a href="">Dolor sit amet</a></li>
+            <li><a href="">Excepteur sint occaecat</a></li>
+        </ol>
+    </nav>
+    <hr>
+    <h2>Tables</h2>
+    <div class="ice-example">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>Javascript</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stu</td>
+                    <td>Dent</td>
+                    <td>HTML</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

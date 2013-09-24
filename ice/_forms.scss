@@ -29,7 +29,9 @@
         border: $box-border;
         width: $width;
         max-width: 100%;
+    }
 
+     #{$all-text-inputs}, textarea {
         &:focus {
             outline: none;
 
@@ -64,32 +66,6 @@
         &:-ms-input-placeholder {
             color: $placeholderColor;
         }
-    }
-
-    input[type="radio"],
-    input[type="checkbox"] {
-        &:checked + label {
-            font-weight: bold;
-        }
-
-        + label {
-            cursor: pointer;
-            margin-right: $ice-block-gutter;
-            margin-left: -1.2em;
-            padding-left: 1.3em;
-            display: inline-block;
-        }
-    }
-
-    textarea {
-
-        line-height: $ice-line-height;
-    }
-
-    select {
-        box-shadow: none;
-        border-radius: 0;
-        cursor: pointer;
     }
 }
 

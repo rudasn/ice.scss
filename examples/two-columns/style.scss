@@ -1,17 +1,4 @@
-@import "../ice/ice";
-
-html {
-    font-size: $ice-font-size;
-}
-
-h1, h2, h3, nav, p {
-    @extend %ice-block;
-    @extend %ice-text;
-}
-
-h1 {
-    @extend %ice-font-hero;
-}
+@import "../../ice/ice";
 
 footer,
 header {
@@ -38,16 +25,6 @@ header {
 }
 
 section {
-    h3 {
-        @extend %ice-font-heading;
-    }
-
-    h4 {
-        @extend %ice-font-title;
-    }
-}
-
-section {
     @include ice-respond($ice-respond-tablet-desktop) {
         float: left;
         width: 70%;
@@ -59,21 +36,6 @@ aside {
     @include ice-respond($ice-respond-tablet-desktop) {
         float: right;
         width: 30%;
-    }
-
-}
-
-aside {
-    @extend %ice-font-small;
-
-    color: #666;
-
-    h3 {
-        @extend %ice-font-heading;
-    }
-
-    h4 {
-        @extend %ice-font-title;
     }
 
     nav {
@@ -98,7 +60,6 @@ aside {
     }
 }
 
-
 form {
     @include ice-respond($ice-respond-mobile) {
         color: green;
@@ -112,32 +73,26 @@ form {
 }
 
 footer {
-    @extend %ice-font-small;
+
     @extend %ice-block-clear;
 }
 
 .ice-inner {
+
     @extend %ice-block-inner;
 }
 
 .ice-form {
+
     @extend %ice-form;
 }
 
 .ice-form-large {
+
     @include ice-form($size: 26px, $border: red, $color: green, $shadow: blue);
 }
 
 .ice-container {
+
     @extend %ice-block-container;
-}
-
-.a {
-    @extend %ice-block-pull-right;
-    color: red;
-}
-
-.b {
-    @extend %ice-block-pull-right;
-    color: blue;
 }
