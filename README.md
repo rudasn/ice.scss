@@ -2,17 +2,15 @@
 
 A collection of SCSS patterns (placeholders and mixins).
 
-Although Ice borrows many concepts and code from several other projects, including Bootstrap, Foundation, and Bourbon, it has a different philosophy.
-
-## Philosophy
-
-* **Bring your own style guide** - Ice does not dictate how your CSS should be organized and how you name your selectors.
+Although Ice borrows many concepts and code from several other projects, including Bootstrap, Foundation, and Bourbon, it has a different philosophy:
 
 * **Minimal** - Ice does not generate any CSS unless you tell it to.
 
-* **Performant** - Ice tries to group selectors and minimize overrides leading to smaller file size and faster rendering times.
-
 * **Just a toolbox** - Ice provides *patterns*. How and if you use them is up to you. You only get what you use.
+
+* **Bring your own style guide** - Ice does not dictate how your CSS should be organized and how you name your selectors.
+
+* **Performant** - Ice tries to group selectors and minimize CSS overrides leading to smaller file size and faster rendering times.
 
 ### Example
 

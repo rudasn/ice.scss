@@ -1,0 +1,78 @@
+@mixin ice-button($color: #fefefe, $radius: 3px, $size: $ice-font-size) {
+    $font-color: hsl(0, 0, 100%);
+    $border: adjust-color($color, $saturation:  9%,  $lightness: -14%);
+    $inset-shadow: adjust-color($color, $saturation: -8%,  $lightness:  15%);
+    $stop-gradient: adjust-color($color, $saturation:  9%,  $lightness: -11%);
+    $text-shadow: adjust-color($color, $saturation:  15%, $lightness: -18%);
+    $padding: $size / 1.5;
+
+    @if lightness($color) > 70% {
+        $font-color: hsl(0, 0, 20%);
+        $text-shadow: adjust-color($color, $saturation: 10%, $lightness: 4%);
+    }
+
+    @include linear-gradient($color, $stop-gradient);
+
+    display: inline-block;
+    border: 1px solid $border;
+    border-radius: $radius;
+    box-shadow: inset 0 1px 0 0 $inset-shadow;
+    padding: $padding $padding * 2;
+    cursor: pointer;
+
+    color: $font-color;
+    font-size: $size;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 $text-shadow;
+
+    &:hover:not(:disabled) {
+        @include ice-button-hover($color);
+    }
+
+    &:active:not(:disabled) {
+        @include ice-button-active($color);
+    }
+
+    &:disabled {
+        @include ice-button-disabled($color);
+    }
+}
+
+@mixin ice-button-hover($color: #fefefe) {
+    $color-hover: adjust-color($color, $saturation: -4%, $lightness: -5%);
+    $inset-shadow-hover: adjust-color($color, $saturation: -7%, $lightness:  5%);
+    $stop-gradient-hover: adjust-color($color, $saturation:  8%, $lightness: -14%);
+
+    @include linear-gradient ($color-hover, $stop-gradient-hover);
+
+    box-shadow: inset 0 1px 0 0 $inset-shadow-hover;
+}
+
+@mixin ice-button-active($color: #fefefe) {
+    $border-active: adjust-color($color, $saturation: 9%, $lightness: -14%);
+    $inset-shadow-active: adjust-color($color, $saturation: 7%, $lightness: -11%);
+
+    border: 1px solid $border-active;
+    box-shadow: inset 0 0 8px 2px $inset-shadow-active,
+        inset 0 0 8px 2px $inset-shadow-active, 0 1px 1px 0 #eee !important;
+}
+
+@mixin ice-button-disabled($color: #fefefe) {
+    @include ice-button-active($color: $color);
+
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+%ice-button {
+    @include ice-button();
+}
+
+%ice-button-hover {
+    @include ice-button-hover($color: purple);
+}

@@ -1,55 +1,8 @@
 @import "../../ice/ice";
-@import "../../ice/_normalice";
+@import "../../ice/normalice";
 
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 500; /* normal */
-}
-
-h1, h2, h3, h4, h5, h6,
-p, table, blockquote, fieldset, pre,
-figure, address,
-ol, ul, dl {
-    @extend %ice-block; // margins
-}
-
-h1, h2, h3, h4, h5, h6, p,
-ol, ul, dl, address {
-    @extend %ice-text; // line-height & max width
-}
-
-hr {
-    @extend %ice-hr;
-}
-
-img {
-    @extend %ice-image;
-}
-
-address {
-    @extend %ice-text-address;
-}
-
-form {
-    @extend %ice-form;
-}
-
-dl {
-    @extend %ice-list-dl;
-}
-
-nav {
-    ol, ul {
-        @extend %ice-nav;
-    }
-}
-
-ol, ul {
-    @extend %ice-list;
-}
-
-table {
-    @extend %ice-table;
+.ice-btn {
+    @extend %ice-button;
 }
 
 .ice-wrapper {

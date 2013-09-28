@@ -1,0 +1,101 @@
+
+html {
+    font-size: $ice-font-size; /* Set base font-size */
+    overflow-y: scroll; /* Always show the scroll bar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500; /* normal */
+}
+
+h1, h2, h3, h4, h5, h6,
+p, table, blockquote, fieldset, pre,
+figure, address,
+ol, ul, dl {
+    @extend %ice-block; // margins
+}
+
+h1, h2, h3, h4, h5, h6, p,
+ol, ul, dl, address {
+    @extend %ice-text; // line-height & max width
+}
+
+hr {
+    @extend %ice-hr;
+}
+
+img {
+    @extend %ice-image;
+}
+
+address {
+    @extend %ice-text-address;
+}
+
+form {
+    @extend %ice-form;
+}
+
+dl {
+    @extend %ice-list-dl;
+}
+
+code,
+kbd,
+pre,
+samp {
+    line-height: $ice-line-height;
+}
+
+small {
+    font-size: $ice-font-small-size;
+}
+
+nav {
+    ol, ul {
+        @extend %ice-nav;
+    }
+}
+
+ol, ul {
+    @extend %ice-list;
+}
+
+table {
+    @extend %ice-table;
+}
+
+fieldset {
+    border: 1px solid;
+    margin: 0;
+    padding: $ice-block-gutter;
+}
+
+textarea {
+    line-height: $ice-line-height;
+}
+
+
+select {
+    cursor: pointer;
+    border-radius: 0;
+    //-webkit-appearance:none; // =Todo custom arrow for webkit only.
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    @extend %ice-button;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    + label { /* Maximize label clickable area */
+        cursor: pointer;
+        margin-right: $ice-block-gutter;
+        margin-left: -1.2em;
+        padding-left: 1.6em;
+        display: inline-block;
+    }
+}
