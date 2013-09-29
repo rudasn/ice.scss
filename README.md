@@ -12,9 +12,12 @@ Although Ice borrows many concepts and code from several other projects, includi
 
 * **Performant** - Ice tries to group selectors and minimize CSS overrides leading to smaller file size and faster rendering times.
 
-### Example
+## Usage
 
-Let's say you just need to define a simple, responsive two-column layout.
+*Ice* only uses SCSS placeholders, mixins, and functions and comes with a ``variables`` file which defines commonly used values like gutter size, font-size, maximum widths, responsive break points, etc.
+
+
+So let's say you just need to define a simple, responsive two-column layout.
 
 In your ```.scss``` file:
 
@@ -23,18 +26,16 @@ In your ```.scss``` file:
 
 .my-layout {
     @extend %ice-block-container;
-
-    .my-content {
-        @include ice-respond($ice-respond-tablet-desktop) {
+    
+    @include ice-respond($ice-respond-tablet-desktop) {
+        .my-content {
             float: left;
             width: 70%;
         }
-    }
-    .my-sidebar {
-        @include ice-respond($ice-respond-tablet-desktop) {
+        .my-sidebar {    
             float: right;
-            width: 30%;
-        }
+            width: 30%;     
+        }                
     }
 }
 ```
@@ -43,39 +44,39 @@ Produces the following CSS:
 
 ```css
 .my-layout:before, .my-layout:after {
-  content: "";
-  display: table;
+    content: "";
+    display: table;
 }
 .my-layout:after {
-  clear: both;
+    clear: both;
 }
 
 .my-layout {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .my-layout {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 980px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
 }
 
 @media only screen and (min-width: 768px) {
-  .my-layout .my-content {
-    float: left;
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .my-layout .my-sidebar {
-    float: right;
-    width: 30%;
-  }
+    .my-layout .my-content {
+        float: left;
+        width: 70%;
+    }
+    .my-layout .my-sidebar {
+        float: right;
+        width: 30%;
+    }
 }
 ```
+
+As you can see there are multiple rules for ```.my-layout```. Although this may seem odd at first it's really a good thing. SCSS groups selectors together when using placeholders and ```extend``` so that identical rules are not repeated in the final CSS.
 
 ## Features
 
@@ -100,6 +101,8 @@ Produces the following CSS:
 * Resources
 
 ## Resources & Further Reading
+
+(More coming soon)
 
 * Responsive
     * http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32 
