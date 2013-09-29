@@ -1,23 +1,30 @@
 @import "../../ice/ice";
 @import "../../ice/normalice";
 
+hr, h2, h3, h4 {
+    clear: both;
+    margin-bottom: 0;
+}
+
 .ice-btn {
     @extend %ice-button;
 }
 
 .ice-wrapper {
     @extend %ice-block-container;
+
+    > h2 {
+        background-color: #f1f1f1;
+        max-width: 100%;
+    }
 }
 
 .ice-example {
     @extend %ice-block;
 
-    padding: $ice-block-gutter;
-    background-color: #f1f1f1;
-     // padding: $ice-block-gutter $ice-block-gutter 0 $ice-block-gutter;
-    // border-top: 2px solid #ccc;
-    // border-bottom: 2px solid #ccc;
-    // border-left: 1px solid;
+    float: right;
+    width: 70%;
+    // background-color: #f1f1f1;
 }
 
 .ice-hero {

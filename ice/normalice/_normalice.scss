@@ -24,6 +24,10 @@ hr {
     @extend %ice-hr;
 }
 
+blockquote {
+    font-style: italic;
+}
+
 img {
     @extend %ice-image;
 }

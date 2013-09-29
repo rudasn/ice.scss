@@ -109,6 +109,10 @@ dl dd {
 ol, ul {
   padding-left: 0;
   margin-left: 0;
+  list-style-position: inside;
+}
+ol ul, ul ul, ol ol, ul ol {
+  padding-left: 16px;
 }
 
 table {
@@ -129,7 +133,7 @@ form input[type="email"], form input[type="number"], form input[type="password"]
   font: inherit;
   box-shadow: inset 1px 1px 8px 1px #e6e6e6;
   color: #333333;
-  padding: 10.66667px;
+  padding: 10.66667px 21.33333px;
   border: 1px solid #cccccc;
   width: 372px;
   max-width: 100%;
@@ -169,8 +173,7 @@ form input[type="email"]:-ms-input-placeholder, form input[type="number"]:-ms-in
 nav ol, nav ul {
   max-width: 100%;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
 }
 
 input[type="submit"],
@@ -588,6 +591,10 @@ h1, h2, h3, h4, h5, h6 {
   /* normal */
 }
 
+blockquote {
+  font-style: italic;
+}
+
 code,
 kbd,
 pre,
@@ -624,7 +631,17 @@ input[type="radio"] + label {
   display: inline-block;
 }
 
-.ice-example {
-  padding: 16px;
+hr, h2, h3, h4 {
+  clear: both;
+  margin-bottom: 0;
+}
+
+.ice-wrapper > h2 {
   background-color: #f1f1f1;
+  max-width: 100%;
+}
+
+.ice-example {
+  float: right;
+  width: 70%;
 }

@@ -25,7 +25,7 @@
         font: inherit;
         box-shadow: $box-shadow;
         color: $color;
-        padding: $padding;
+        padding: $padding $padding * 2;
         border: $box-border;
         width: $width;
         max-width: 100%;

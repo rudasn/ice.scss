@@ -5,8 +5,7 @@
                $padding: $ice-nav-link-padding) {
     max-width: 100%;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
     @content;
 
     @if $items != "" {
