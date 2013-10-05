@@ -46,3 +46,16 @@ hr, h2, h3, h4 {
 .ice-small {
     @extend %ice-font-small;
 }
+
+.ice-nav-vertical-item {
+    @extend %ice-nav-vertical-item;
+    // @include ice-nav-item(vertical);
+}
+
+.ice-nav-horizontal-item {
+    @extend %ice-nav-horizontal-item;
+    // @include ice-nav-item(horizontal,
+    //                       $link: "> a") {
+        padding: $ice-block-gutter / 2 $ice-block-gutter;
+    // }
+}
