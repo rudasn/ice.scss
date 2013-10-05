@@ -16,7 +16,7 @@ ol, ul, dl {
 }
 
 h1, h2, h3, h4, h5, h6, p,
-ol, ul, dl, address {
+ol, ul, dl, address, figcaption {
     @extend %ice-text; // line-height & max width
 }
 
@@ -26,6 +26,8 @@ hr {
 
 blockquote {
     font-style: italic;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 img {
@@ -73,6 +75,15 @@ fieldset {
     border: 1px solid;
     margin: 0;
     padding: $ice-block-gutter;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    @extend %ice-font-small;
 }
 
 textarea {

@@ -1,0 +1,27 @@
+@import "../../../../ice/ice";
+
+.ice-site-header {
+    h1 {
+        // @extend %ice-font-hero;
+    }
+}
+
+.ice-blog-entry-title {
+    @extend %ice-font-heading;
+}
+
+.ice-blog-entry-summary {
+    @extend %ice-font-title;
+}
+
+.ice-blog-entry-meta {
+    @extend %ice-font-small;
+}
+
+.ice-list-entries {
+    @extend %ice-font-small;
+}
+
+.ice-site-footer {
+    @extend %ice-font-small;
+}

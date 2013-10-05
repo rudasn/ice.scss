@@ -6,7 +6,7 @@ $ice-base-size: 16px;
 /**
  * Blocks
  */
-$ice-block-width: 980px;
+$ice-block-width: 1120px;
 $ice-block-gutter: $ice-base-size;
 
 $ice-border-color: #ccc;
@@ -24,7 +24,7 @@ $ice-font-size: $ice-base-size;
 $ice-font-hero-size: 4.5;
 $ice-font-hero: $ice-font-size * $ice-font-hero-size;
 
-$ice-font-heading-size: 2.1;
+$ice-font-heading-size: 2.2;
 $ice-font-heading: $ice-font-size * $ice-font-heading-size;
 
 $ice-font-title-size: 1.65;
@@ -41,9 +41,10 @@ $ice-font-small: $ice-font-size * $ice-font-small-size;
  */
 $ice-respond-min-break: 480px;
 $ice-respond-mid-break: 768px;
-$ice-respond-max-break: $ice-block-width;
+$ice-respond-max-break: 980px; // $ice-block-width;
 
 $ice-respond-mobile: "(max-width:" + $ice-respond-min-break + ")";
+$ice-respond-mobile-up: "(min-width:" + ($ice-respond-min-break - 1) + ")";
 $ice-respond-tablet: "(min-width:" + ($ice-respond-min-break - 1) + ")",
                      "(max-width:" + ($ice-respond-max-break - 1) + ")";
 $ice-respond-desktop: "(min-width:" + $ice-respond-max-break + ")";
@@ -53,6 +54,7 @@ $ice-respond-tablet-desktop: "(min-width:" + ($ice-respond-mid-break) + ")";
 /**
  * Navigation
  */
-$ice-nav-item-active: ".active";
-$ice-nav-link: "> a";
-$ice-nav-link-padding: $ice-block-gutter / 2 $ice-block-gutter;
+$ice-nav-item-active: ".is-active";
+$ice-nav-item-disabled: ".is-disabled";
+$ice-nav-item-link: "> a";
+// $ice-nav-link-padding: $ice-block-gutter / 2 $ice-block-gutter;

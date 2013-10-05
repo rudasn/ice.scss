@@ -1,0 +1,133 @@
+/**
+ * Ice.scss
+ * github.com/rudasn/ice.scss
+ */
+/**
+ * Globals
+ */
+/**
+ * Blocks
+ */
+/**
+ * Typography
+ */
+/**
+ * Responsive
+ */
+/**
+ * Navigation
+ */
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+/* Hide visually and from screenreaders, but maintain layout */
+/* Contain floats: h5bp.com/q */
+.ice-site-wrapper:before, .ice-list-entry:before, .ice-site-wrapper:after, .ice-list-entry:after {
+  content: "";
+  display: table;
+}
+.ice-site-wrapper:after, .ice-list-entry:after {
+  clear: both;
+}
+
+.ice-site-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ice-blog-entry-poster,
+.ice-blog-entry-meta, .ice-list-entry {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.ice-site-wrapper {
+  position: relative;
+  max-width: 1120px;
+}
+
+/**
+ * Site Layout
+ */
+.ice-site-wrapper {
+  padding: 16px;
+}
+
+.ice-site-header {
+  margin-bottom: 16px;
+}
+.ice-site-header h1 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.ice-site-content {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ice-site-footer,
+.ice-site-content {
+  -webkit-transition: margin-left 500ms;
+  -moz-transition: margin-left 500ms;
+  transition: margin-left 500ms;
+}
+
+/**
+ * Blog Entry
+ */
+.ice-blog-entry figure img, img.ice-blog-entry-poster {
+  padding: 1px;
+  border: 1px solid;
+}
+
+.ice-blog-entry blockquote {
+  border-left: 5px solid;
+  padding-left: 16px;
+}
+
+/**
+ * List Entries
+ */
+/**
+ * Responsive
+ */
+@media only screen and (min-width: 479px) {
+  .ice-site-nav {
+    float: left;
+    position: fixed;
+    max-width: 170px;
+  }
+
+  .ice-blog-entry-meta {
+    float: right;
+    margin-left: 16px;
+  }
+}
+@media only screen and (min-width: 479px) and (max-width: 979px) {
+  .ice-site-footer,
+  .ice-site-content {
+    margin-left: 102px;
+  }
+
+  .ice-site-nav {
+    max-width: 102px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .ice-site-footer,
+  .ice-site-content {
+    margin-left: 170px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ice-blog-entry aside,
+  .ice-list-entries .ice-blog-entry-poster {
+    float: right;
+    max-width: 33%;
+    margin-left: 16px;
+  }
+}

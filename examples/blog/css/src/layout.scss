@@ -1,0 +1,126 @@
+@import "../../../../ice/ice";
+
+$ice-site-left-gutter: 170px;
+
+/**
+ * Site Layout
+ */
+.ice-site-wrapper {
+    @extend %ice-block-container;
+
+    padding: $ice-block-gutter;
+}
+
+.ice-site-header {
+    margin-bottom: 16px;
+
+    h1 {
+        margin-bottom: 0;
+        line-height: 1;
+    }
+}
+
+.ice-site-content {
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding-top: $ice-block-gutter;
+    padding-bottom: $ice-block-gutter;
+}
+
+// .ice-site-header,
+.ice-site-footer,
+.ice-site-content {
+    @include transition(margin-left 500ms);
+}
+
+/**
+ * Blog Entry
+ */
+%ice-blog-entry-image {
+    padding: 1px;
+    border: 1px solid;
+}
+
+.ice-blog-entry {
+    blockquote {
+        border-left: 5px solid;
+        padding-left: $ice-block-gutter;
+    }
+
+    figure {
+        img {
+            @extend %ice-blog-entry-image;
+        }
+    }
+}
+
+.ice-blog-entry-poster,
+.ice-blog-entry-meta {
+    @extend %ice-block;
+}
+
+img.ice-blog-entry-poster {
+    @extend %ice-blog-entry-image;
+}
+
+/**
+ * List Entries
+ */
+.ice-list-entries {
+    // border-top: 3px solid;
+}
+
+.ice-list-entry {
+    @extend %ice-block;
+    @extend %clearfix;
+}
+
+/**
+ * Responsive
+ */
+@include ice-respond($ice-respond-mobile-up) {
+    // .ice-site-header,
+    .ice-site-nav {
+        float: left;
+        position: fixed;
+        max-width: $ice-site-left-gutter;
+        // overflow: hidden;
+    }
+
+    .ice-site-nav {
+        // margin-top: 100px;
+    }
+
+    .ice-blog-entry-meta {
+        float: right;
+        margin-left: $ice-block-gutter;
+    }
+}
+@include ice-respond($ice-respond-tablet) {
+    // .ice-site-header,
+    .ice-site-footer,
+    .ice-site-content {
+        margin-left: $ice-site-left-gutter * 0.6;
+    }
+    // .ice-site-header,
+    .ice-site-nav {
+        max-width: $ice-site-left-gutter * 0.6;
+    }
+}
+@include ice-respond($ice-respond-desktop) {
+    // .ice-site-header,
+    .ice-site-footer,
+    .ice-site-content {
+        margin-left: $ice-site-left-gutter;
+    }
+
+}
+
+@include ice-respond($ice-respond-tablet-desktop) {
+    .ice-blog-entry aside,
+    .ice-list-entries .ice-blog-entry-poster {
+        float: right;
+        max-width: 33%;
+        margin-left: $ice-block-gutter;
+    }
+}

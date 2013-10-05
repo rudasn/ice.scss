@@ -3,7 +3,7 @@
                 $border: $ice-border-color,
                 $shadow: adjust-color($border, $lightness: 10%)) {
 
-    $padding: $size / 1.5;
+    $padding: $size / 2;
 
     $box-border: 1px solid $border;
 
@@ -17,12 +17,14 @@
 
     $width: $ice-text-width * 0.6;
 
-    font-size: $size;
+    @if $size != $ice-font-size {
+        font-size: $size;
+    }
 
     #{$all-text-inputs}, textarea, select {
         @extend %ice-box;
 
-        font: inherit;
+        // font: inherit;
         box-shadow: $box-shadow;
         color: $color;
         padding: $padding $padding * 2;
@@ -49,8 +51,12 @@
             color: $placeholderColor;
         }
     }
+
+    textarea {
+        min-height: 10em;
+    }
 }
 
 %ice-form {
-    @include ice-form();
+    @include ice-form;
 }

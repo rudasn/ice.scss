@@ -1,0 +1,45 @@
+@import "../../../../ice/ice";
+
+.ice-nav {
+    @extend %ice-nav;
+}
+
+.ice-site-nav {
+    @include transition(margin-bottom 500ms);
+
+    margin-bottom: $ice-block-gutter;
+
+    .ice-nav-item {
+        @include transition(margin-right 500ms);
+
+        float: left;
+        margin-right: $ice-block-gutter;
+    }
+
+    @include ice-respond($ice-respond-tablet-up) {
+        margin-bottom: 0;
+
+        .ice-nav-item {
+            float: none;
+            margin-right: 0;
+        }
+    }
+}
+
+.ice-site-header {
+    // @include ice-respond($ice-respond-desktop) {
+    //     nav {
+    //         position: absolute;
+    //         left: -6em;
+    //     }
+    // }
+
+    .ice-nav-item {
+        // float: left;
+        // margin-right: $ice-block-gutter;
+    }
+}
+
+.ice-nav-item {
+    @extend %ice-nav-item;
+}

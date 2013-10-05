@@ -1,89 +1,49 @@
-@mixin ice-nav($direction: "",
-               $items: "",
-               $active: $ice-nav-item-active,
-               $link: $ice-nav-link,
-               $padding: $ice-nav-link-padding) {
-    max-width: 100%;
-    list-style: none;
-    margin-bottom: 0;
-    @content;
-
-    @if $items != "" {
-        @if $direction != "" {
-            #{$items} {
-                @include ice-nav-item($direction: $direction,
-                                      $link: $link,
-                                      $padding: $padding,
-                                      $active: $active);
-            }
-        }
-    }
-}
-
-@mixin ice-nav-item($direction,
-                    $link: $ice-nav-link,
-                    $padding: $ice-nav-link-padding,
-                    $active: $ice-nav-item-active) {
-    position: relative;
-    @content;
-
-    #{$link} {
-        padding: $padding;
-    }
-
-    @if $direction == vertical {
-        float: none;
-        margin-bottom: $padding;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        #{$link} {
-            display: inline-block;
-        }
-    }
-
-    @else if $direction == horizontal {
-        float: left;
-        margin-bottom: 0;
-
-        #{$link} {
-            display: inline-block;
-        }
-    }
-
-    @if $active != "" {
-        &#{$active} {
-            @include ice-nav-item-active($link);
-        }
-    }
-}
-
-@mixin ice-nav-item-active($link: $ice-nav-link) {
-    #{$link} {
-        font-weight: bold;
-        text-decoration: none;
-        @content;
-    }
-}
-
 %ice-nav {
     @extend %clearfix;
-    @include ice-nav();
+
+    max-width: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-%ice-nav-horizontal-item {
+@mixin ice-nav-item($link: $ice-nav-item-link,
+                    $active: $ice-nav-item-active,
+                    $disabled: $ice-nav-item-disabled) {
+    position: relative;
 
-    @include ice-nav-item(horizontal);
+    #{$link} {
+        @extend %ice-nav-item-link;
+    }
+
+    &#{$active} {
+        @extend %ice-nav-item-active;
+    }
+
+    &#{$disabled} {
+        @extend %ice-nav-item-disabled;
+    }
 }
 
-%ice-nav-vertical-item {
+%ice-nav-item {
 
-    @include ice-nav-item(vertical);
+    @include ice-nav-item;
 }
 
 %ice-nav-item-active {
+    font-weight: bold;
+    text-decoration: none;
+}
 
-    @include ice-nav-item-active;
+%ice-nav-item-disabled {
+    opacity: 0.6;
+}
+
+%ice-nav-item-link {
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+    }
 }

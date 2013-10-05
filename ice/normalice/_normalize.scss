@@ -230,18 +230,6 @@ svg:not(:root) {
 }
 
 /* ==========================================================================
-Figures
-========================================================================== */
-
-/**
-* Address margin not present in IE 8/9 and Safari 5.
-*/
-
-figure {
- margin: 0;
-}
-
-/* ==========================================================================
 Forms
 ========================================================================== */
 
@@ -270,15 +258,6 @@ textarea {
  margin: 0; /* 3 */
 }
 
-/**
-* Address Firefox 4+ setting `line-height` on `input` using `!important` in
-* the UA stylesheet.
-*/
-
-// button,
-// input {
-//  line-height: 1;
-// }
 
 /**
 * Address inconsistent `text-transform` inheritance for `button` and `select`.

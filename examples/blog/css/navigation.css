@@ -1,0 +1,82 @@
+/**
+ * Ice.scss
+ * github.com/rudasn/ice.scss
+ */
+/**
+ * Globals
+ */
+/**
+ * Blocks
+ */
+/**
+ * Typography
+ */
+/**
+ * Responsive
+ */
+/**
+ * Navigation
+ */
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+/* Hide visually and from screenreaders, but maintain layout */
+/* Contain floats: h5bp.com/q */
+.ice-nav:before, .ice-nav:after {
+  content: "";
+  display: table;
+}
+.ice-nav:after {
+  clear: both;
+}
+
+.ice-nav {
+  max-width: 100%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.ice-nav-item {
+  position: relative;
+}
+
+.is-active.ice-nav-item {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.is-disabled.ice-nav-item {
+  opacity: 0.6;
+}
+
+.ice-nav-item > a {
+  display: inline-block;
+}
+.ice-nav-item > a:hover {
+  text-decoration: none;
+}
+
+.ice-site-nav {
+  -webkit-transition: margin-bottom 500ms;
+  -moz-transition: margin-bottom 500ms;
+  transition: margin-bottom 500ms;
+  margin-bottom: 16px;
+}
+.ice-site-nav .ice-nav-item {
+  -webkit-transition: margin-right 500ms;
+  -moz-transition: margin-right 500ms;
+  transition: margin-right 500ms;
+  float: left;
+  margin-right: 16px;
+}
+@media only screen and (min-width: 479px) {
+  .ice-site-nav {
+    margin-bottom: 0;
+  }
+  .ice-site-nav .ice-nav-item {
+    float: none;
+    margin-right: 0;
+  }
+}
