@@ -52,10 +52,26 @@
 %ice-list {
     padding-left: 0;
     margin-left: 0;
-    list-style-position: inside;
+    list-style-position: outside;
 
-    ul, ol {
-        padding-left: $ice-block-gutter;
+    > li {
+        margin-bottom: 0.3em;
+    }
+
+    ol, ul {
+        margin-bottom: 0;
+    }
+}
+
+ul%ice-list {
+    > li {
+        margin-left: 1.1em;
+    }
+}
+
+ol%ice-list {
+    > li {
+        margin-left: 1.3em;
     }
 }
 

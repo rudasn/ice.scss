@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Typography .:. Ice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="ice-docs-site">
+    <header class="ice-docs-site-header">
+        <h1 class="ice-docs-site-heading">Typography</h1>
+    </header>
+    <hr>
+    <section class="ice-docs-site-content">
+        <section class="ice-docs-intro">
+            <p>Typography rules. Font sizes, whitespace, line heights, and line widths are extremely important in making sure visitors can actualy consume your content.</p>
+            <p>If you are including <code>normalice.scss</code> in your project you get these rules defined for you. If you want to avoid <code>normalice.scss</code> but stil want these rules you can extend any of the placeholders defined in <code>typography.scss</code>.</p>
+            <p>The goal is <strong>maximum readability</strong> and these are the key issues <code>ice</code> addresses:</p>
+            <dl>
+                <dt>Whitespace</dt>
+                <dd>The default white space value (the gutter; used for margins, paddings, etc) is <code>16px</code>.</dd>
+                <dt>Font size</dt>
+                <dd>By default the font size is set to be the same as the gutter size, ie. <code>16px</code>.</dd>
+                <dt>Line height</dt>
+                <dd>The default line height is <code>1.67</code> times the font size.</dd>
+                <dt>Line width</dt>
+                <dd>Studies have shown that narrower text blocks are easier to read <sup>[citation needed]</sup>. Ice limits the maximum width of textual blocks (<code>p</code>, <code>h[1-6]</code>, <code>ol</code>, <code>ul</code>, <code>dl</code>, <code>address</code>, <code>figcaption</code>, defined in <code>normalice.scss</code>) to <code>40em</code> (which is 640px if the font-size is 16px).</dd>
+            </dl>
+            <p class="ice-docs-note">
+                These default values can be changed from <code>variables.scss</code>
+            </p>
+            <p>Also note that readability often depends on the type of content you are presenting and the literacy level of your visitors. One size does not normally fits all, so do your research first.</p>
+        </section>
+        <section class="ice-docs-headings">
+            <h2 class="ice-docs-heading">Font Sizes <small>&amp; Headings</small></h2>
+            <p>When working with headings you would most often like to define your own sizes depending on their context.</p>
+            <p>For this reason ice does not define any sizes for headings; instead it provides some font size placeholders which can be applied to any HTML element.</p>
+            <div class="ice-docs-example">
+                <p class="ice-docs-font-size-hero">Hero</p>
+
+                <p class="ice-docs-font-size-heading">Heading</p>
+
+                <p class="ice-docs-font-size-title">Title</p>
+
+                <p class="ice-docs-font-size-large">Large</p>
+
+                <p class="ice-docs-font-size-small">Small</p>
+
+            </div>
+        </section>
+        <section class="ice-docs-paragraphs">
+            <h2 class="ice-docs-heading">Paragraphs</h2>
+            <div class="ice-docs-example">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    <dfn title="Definition">DFN</dfn>
+                    <abbr title="Abbreviation">ABBR</abbr>
+                    Sub<sub>Text</sub>
+                    Sup<sup>Text</sup>
+                    <mark>mark</mark>
+                    <strong>strong</strong>
+                    <em>emphasis</em>
+                </p>
+            </div>
+        </section>
+        <section class="ice-docs-lists">
+            <h2 class="ice-docs-heading">Lists</h2>
+            <p></p>
+            <h3 class="ice-docs-subheading">Ordered</h3>
+            <div class="ice-docs-example">
+                <ol>
+                    <li>Labore et dolore magna aliqua.</li>
+                    <li>Consectetur adipisicing elit.</li>
+                    <li>A very long list item. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                    <li>Reprehenderit in voluptate.</li>
+                </ol>
+            </div>
+            <h3 class="ice-docs-subheading">Unordered</h3>
+            <div class="ice-docs-example">
+                <ul>
+                    <li>labore et dolore magna aliqua</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                        <ol>
+                            <li>labore et dolore magna aliqua</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elitm ad minim veniam, quis nostrud exercitation ullamco.
+                                <ul>
+                                    <li>aute irure dolor in reprehenderit</li>
+                                    <li>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>aute irure dolor in reprehenderit</li>
+                    <li>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+                </ul>
+            </div>
+            <h3 class="ice-docs-subheading">Definition</h3>
+            <div class="ice-docs-example">
+                <dl>
+                    <dt>Consectetur adipisicing</dt>
+                    <dd>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</dd>
+                    <dt>Eiusmod tempor incididunt ut labore et dolore</dt>
+                    <dd>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                    <dt>Consectetur adipisicing</dt>
+                    <dd>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</dd>
+                </dl>
+            </div>
+        </section>
+        <section class="ice-docs-address">
+            <h2 class="ice-docs-heading">Address</h2>
+            <div class="ice-docs-example">
+                <address>
+                    <strong>Ice</strong><br>
+                    github.com/rudasn/ice.scss<br>
+                </address>
+            </div>
+        </section>
+        <section class="ice-docs-quotes">
+            <h2 class="ice-docs-heading">Quotes</h2>
+            <div class="ice-docs-example">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </blockquote>
+            </div>
+        </section>
+        <section class="ice-docs-code">
+            <h2 class="ice-docs-heading">Code</h2>
+            <div class="ice-docs-example">
+<pre><code>/* Fix so tags get normal text size also in some versions of Firefox, Safari, Konqueror, Chrome etc. */
+tt, code, pre {
+    font-family: monospace, sans-serif;
+}
+
+/* Fix so tags, and .css and .js pages, get normal text size
+   also in some versions of Firefox, Safari, Konqueror, Chrome etc. */
+div.mw-geshi div,
+pre {
+  font-family: monospace, sans-serif !important;
+}
+
+/* Google Analytics */
+var _gaq = [['_setAccount', 'UA-XXXXX'], ['_trackPageview']];
+(function(d, t) {var g = d.createElement(t), s = d.getElementsByTagName(t)[0];g.async = true;g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';s.parentNode.insertBefore(g, s);})(document, 'script');
+</code></pre>
+            </div>
+        </section>
+    </section>
+    <footer class="ice-docs-site-footer">
+
+    </footer>
+</div>
+</body>
+</html>

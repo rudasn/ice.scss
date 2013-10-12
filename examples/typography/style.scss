@@ -1,0 +1,102 @@
+@import "../../ice/ice";
+@import "../../ice/normalice";
+
+%ice-docs-section {
+    @extend %ice-block-container;
+}
+
+%ice-docs-section-content {
+    @extend %ice-block;
+
+    // float: right;
+    // width: 70%;
+    // max-width: 100%;
+    margin-left: 20%;
+}
+
+%ice-docs-heading {
+    max-width: 100%;
+    clear: both;
+}
+
+.ice-docs-site {
+    @extend %ice-block-container;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ice-docs-intro,
+.ice-docs-headings,
+.ice-docs-font-sizes,
+.ice-docs-paragraphs,
+.ice-docs-lists,
+.ice-docs-address,
+.ice-docs-quotes {
+    @extend %ice-docs-section;
+
+    > p, > dl {
+        @extend %ice-docs-section-content;
+    }
+}
+
+.ice-docs-lists {
+    .ice-docs-example {
+        // background-color: #f1f1f1;
+    }
+}
+
+.ice-docs-heading,
+.ice-docs-subheading {
+    @extend %ice-docs-heading;
+}
+
+.ice-docs-heading {
+    background-color: #f1f1f1;
+}
+
+.ice-docs-subheading {
+
+}
+
+.ice-docs-example {
+    @extend %ice-docs-section-content;
+    // background-color: #f1f1f1;
+}
+
+.ice-docs-note {
+    padding: $ice-block-gutter / 2;
+    background-color: #fffccc;
+}
+
+.ice-docs-font-size-hero {
+    @extend %ice-font-hero;
+}
+
+.ice-docs-font-size-heading {
+    @extend %ice-font-heading;
+}
+
+.ice-docs-font-size-title {
+    @extend %ice-font-title;
+}
+
+.ice-docs-font-size-large {
+    @extend %ice-font-large;
+}
+
+.ice-docs-font-size-small {
+    @extend %ice-font-small;
+}
+
+// .ice-nav-vertical-item {
+//     @extend %ice-nav-vertical-item;
+//     // @include ice-nav-item(vertical);
+// }
+
+// .ice-nav-horizontal-item {
+//     @extend %ice-nav-horizontal-item;
+//     // @include ice-nav-item(horizontal,
+//     //                       $link: "> a") {
+//         padding: $ice-block-gutter / 2 $ice-block-gutter;
+//     // }
+// }
