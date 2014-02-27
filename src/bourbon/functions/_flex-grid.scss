@@ -1,7 +1,10 @@
 // Flexible grid
-@function flex-grid($columns, $container-columns: $fg-max-columns) {
-  $width: $columns * $fg-column + ($columns - 1) * $fg-gutter;
-  $container-width: $container-columns * $fg-column + ($container-columns - 1) * $fg-gutter;
+@function flex-grid($columns,
+                    $column-width: $fg-column,
+                    $column-gutter: $fg-gutter,
+                    $container-columns: $fg-max-columns) {
+  $width: $columns * $column-width + ($columns - 1) * $column-gutter;
+  $container-width: $container-columns * $column-width + ($container-columns - 1) * $column-gutter;
   @return percentage($width / $container-width);
 }
 

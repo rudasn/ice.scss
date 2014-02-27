@@ -1,0 +1,93 @@
+@mixin ice-form($size: $ice-font-size,
+                $input-padding: $size/2,
+                $input-border: 1px solid) {
+
+    $input-width: $ice-text-width * 0.6;
+
+    @if $size != $ice-font-size {
+        font-size: $size;
+    }
+
+    #{$all-text-inputs}, textarea, select {
+        @extend %ice-box;
+
+        padding: $input-padding $input-padding * 2;
+        border: $input-border;
+        width: $input-width;
+        max-width: 100%;
+    }
+
+     #{$all-text-inputs}, textarea {
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            opacity: 0.7;
+        }
+    }
+
+    textarea {
+        min-height: 10em;
+    }
+}
+
+@mixin ice-form-style($size: $ice-font-size,
+                      $input-color: $ice-font-color,
+                      $input-border: $ice-border-color,
+                      $input-background: #efefef,
+                      $input-shadow-color: adjust-color($input-border,
+                                                        $lightness: 10%),
+                      $input-placeholder-color: opacify($input-color, 0.5)) {
+
+    $input-shadow-size: $size / 2;
+    $input-shadow-focus: 0 0 $input-shadow-size 1px $input-shadow-color;
+    $input-shadow: inset  1px 1px $input-shadow-size 1px $input-shadow-color;
+
+    // $input-placeholder-color: opacify($input-color, 0.5);
+    // $input-placeholder-color: adjust-color($input-color, $opacity: 0.5);
+    $input-placeholder-focus-color: opacify($input-placeholder-color, 0.1);
+    // $input-placeholder-focus-color: adjust-color($input-color, $opacity: 60%);
+
+    $input-width: $ice-text-width * 0.6;
+
+    @if $size != $ice-font-size {
+        font-size: $size;
+    }
+
+    #{$all-text-inputs}, textarea, select {
+        box-shadow: $input-shadow;
+        color: $input-color;
+        border-color: $input-border;
+        background: $input-background;
+    }
+
+     #{$all-text-inputs}, textarea {
+        &:focus {
+            @include placeholder() {
+                color: $input-placeholder-focus-color;
+            }
+
+            outline: none;
+            box-shadow: $input-shadow-focus;
+        }
+
+        &:disabled {
+            opacity: 0.7;
+        }
+
+        @include placeholder() {
+            color: $input-placeholder-color;
+        }
+    }
+}
+
+
+%ice-form {
+    @include ice-form;
+}
+
+
+%ice-form-style {
+    @include ice-form-style;
+}

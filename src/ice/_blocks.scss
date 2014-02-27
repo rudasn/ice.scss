@@ -23,6 +23,7 @@
     @extend %clearfix;
     @extend %ice-box;
 
+    margin: 0 auto;
     position: relative;
     max-width: $ice-block-width;
 }

@@ -3,8 +3,8 @@
  * github.com/rudasn/ice.scss
  */
 // A cleaned-up version of normalize.css for ice.scss.
-@import "normalice/normalize";
+@import "src/normalice/normalize";
 
 // Additional normalization rules depending on ice variables and patterns.
-@import "normalice/normalice";
+@import "src/normalice/normalice";
 

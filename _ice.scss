@@ -1,0 +1,23 @@
+/*!*
+ * Ice.scss
+ * github.com/rudasn/ice.scss
+ */
+// Globals.
+// @import "variables_default"; // Uncomment if variables not defined elsewhere.
+
+// Libs.
+@import "src/bourbon/bourbon";
+
+// Ice Patterns.
+@import "src/ice/helpers";
+@import "src/ice/blocks";
+@import "src/ice/typography";
+@import "src/ice/forms";
+@import "src/ice/responsive";
+@import "src/ice/navigation";
+
+// Ice Components.
+@import "src/components/buttons";
+
+
+// Ice CSS3 helpers.

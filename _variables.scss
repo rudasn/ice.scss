@@ -45,11 +45,14 @@ $ice-respond-max-break: 980px; // $ice-block-width;
 
 $ice-respond-mobile: "(max-width:" + $ice-respond-min-break + ")";
 $ice-respond-mobile-up: "(min-width:" + ($ice-respond-min-break - 1) + ")";
+
+$ice-respond-tablet-down: "(max-width:" + ($ice-respond-mid-break - 1) + ")";
 $ice-respond-tablet: "(min-width:" + ($ice-respond-min-break - 1) + ")",
                      "(max-width:" + ($ice-respond-max-break - 1) + ")";
+$ice-respond-tablet-up: "(min-width:" + ($ice-respond-mid-break) + ")";
+
 $ice-respond-desktop: "(min-width:" + $ice-respond-max-break + ")";
-$ice-respond-mobile-tablet: "(max-width:" + ($ice-respond-mid-break - 1) + ")";
-$ice-respond-tablet-desktop: "(min-width:" + ($ice-respond-mid-break) + ")";
+$ice-respond-desktop-down: "(min-width:" + ($ice-respond-mid-break) + ")";
 
 /**
  * Navigation
